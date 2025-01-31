@@ -1,0 +1,223 @@
+/* Formulário de Suporte */
+.support {
+    position: relative;
+
+    &__margin__top {
+        margin-top: 10%;
+    }
+
+    &__flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    &__submit {
+        width: 322px;
+        height: 30px;
+        padding: 24px 20px;
+        background-color: #292e45;
+        border: none;
+        border-radius: 30px;
+        color: white;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: $transition;
+
+        &:hover {
+            gap: 14px;
+            background-color: #252a3f;
+        }
+
+        &__arrow {
+            width: 14px;
+            fill: white;
+        }
+    }
+}
+
+#supportform {
+    margin: 0 $horizontal-space 0%;
+    background: linear-gradient(180deg,
+            rgba(35, 39, 62, 1) 0%,
+            rgba(28, 33, 54, 0) 85%),
+        url(/src/assets/images/shape-dotted-dark-02.svg);
+    /* filter: blur(5px); */
+    background-position: center center;
+    background-repeat: repeat;
+    padding: 83px 83px 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 83px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+#support {
+    background-color: $bodyColor;
+    border: $solidBorder;
+    border-radius: 12px;
+    padding: 60px;
+
+    & h1 {
+        font-size: 38px;
+        margin-bottom: 55px;
+    }
+
+    & textarea {
+        resize: vertical;
+        height: 92px;
+        margin-bottom: 40px;
+    }
+}
+
+.our__address {
+    padding-top: 2%;
+
+    & h1 {
+        font-size: 38px;
+        margin-bottom: 45px;
+    }
+}
+
+.first__data {
+    display: grid;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.dataSupport {
+    border: none;
+    border-bottom: $solidBorder;
+    background-color: transparent;
+    padding-bottom: 14px;
+    width: 100%;
+
+    color: $textColor;
+    font-weight: 400;
+    word-spacing: 1.5px;
+    line-height: 25px;
+    font-size: 17px;
+    font-family: "Inter", sans-serif, ui-sans-serif, system-ui, -apple-system;
+
+    &::placeholder {
+        color: $textColor;
+        font-weight: 400;
+        word-spacing: 1.5px;
+        line-height: 25px;
+        font-size: 17px;
+        font-family: "Inter", sans-serif, ui-sans-serif, system-ui, -apple-system;
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        color: white;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+}
+
+.submit__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12%;
+}
+
+.check__cookies {
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+
+/* Checkbox */
+.checkbox {
+    margin-top: 0.75%;
+}
+
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(34, 50, 84, 0.03);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+    }
+
+    & svg {
+        position: relative;
+        z-index: 1;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: $textColor;
+        stroke-width: 1.5;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.2s ease;
+
+        & path {
+            stroke-dasharray: 60;
+            stroke-dashoffset: 0;
+        }
+
+        & polyline {
+            stroke-dasharray: 22;
+            stroke-dashoffset: 66;
+        }
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+
+        & svg {
+            stroke: $blueColor;
+        }
+    }
+}
+
+#cbx:checked+.check svg {
+    stroke: $blueColor;
+
+    & path {
+        stroke-dashoffset: 60;
+        transition: all 0.3s linear;
+    }
+
+    & polyline {
+        stroke-dashoffset: 42;
+        transition: all 0.2s linear;
+        transition-delay: 0.15s;
+    }
+}
+
+.address__content {
+    display: grid;
+    gap: 28px;
+}
+
+.address__title {
+    margin-bottom: 16px;
+}

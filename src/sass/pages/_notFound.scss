@@ -1,0 +1,57 @@
+.notFound {
+    height: 100dvh;
+    background: url('/public/images/notFound-bg.jpg') no-repeat left center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &__card {
+        background: rgba(24, 28, 49, 0.6);
+        backdrop-filter: blur(32px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 42px;
+        box-shadow: 0 0 36px #ffffff26;
+
+        &__icons {
+            position: relative;
+
+            &--icon-1 {
+                position: absolute;
+                top: -16px;
+                left: -20.5%;
+            }
+
+            &--icon-2 {
+                position: absolute;
+                top: -74px;
+                right: -18%;
+            }
+
+            &--icon-3 {
+                position: absolute;
+                bottom: -224px;
+                right: -15%;
+            }
+        }
+
+        & h1 {
+            margin-bottom: 16px;
+        }
+
+        & button {
+            margin: 35px auto 0;
+            background-color: $blueColor;
+            padding: 15px;
+            border-radius: 3px;
+            color: white;
+            transition: $transition;
+
+            &:hover {
+                filter: brightness(86%);
+            }
+        }
+    }
+}

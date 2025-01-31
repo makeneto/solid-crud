@@ -1,0 +1,255 @@
+/* Barra de navegação */
+#main__nav {
+    width: 100%;
+    padding: 44px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: -1%;
+    z-index: 9999;
+    background: rgba(24, 28, 49, 0.6);
+    backdrop-filter: blur(32px);
+}
+
+.page__link {
+    color: $textColor;
+    text-decoration: none;
+    transition: $transition;
+}
+
+.page__link:active,
+.page__link:hover {
+    color: $blueColor;
+}
+
+.show__link {
+    display: none;
+}
+
+#logOut,
+#logOut:active {
+    color: $redColor;
+    font-weight: 600;
+    transition: $transition;
+}
+
+#logOut:hover {
+    color: #f25c69;
+}
+
+#logIn,
+#logIn:active {
+    color: rgb(111, 169, 255);
+    font-weight: 600;
+    transition: $transition;
+}
+
+#logIn:hover {
+    filter: brightness(84%);
+}
+
+.current__page {
+    color: $blueColor;
+    font-weight: 700;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.nav__others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.search__icon {
+    width: 20px;
+    height: 20px;
+    stroke: $textColor;
+    transition: $transition;
+}
+
+.search__icon:hover {
+    stroke: $blueColor;
+    cursor: pointer;
+}
+
+.signIn__button {
+    background-color: $blueColor;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 23px;
+    color: white;
+    font-size: 16px;
+    transition: $transition;
+}
+
+.signIn__button:hover {
+    background-color: $darkBlueColor;
+    filter: brightness(97%);
+    cursor: pointer;
+}
+
+/* Barra de navegação para dispositivos mobile */
+.intro__header {
+    display: none;
+    width: 100%;
+    background: rgba(24, 28, 49, 0.6);
+    backdrop-filter: blur(32px);
+    position: fixed;
+    top: 0;
+    padding: 4%;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.logo__tablet {
+    display: none;
+}
+
+.nav {
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 0;
+    right: 0;
+    background: rgba(24, 28, 49, 0.6);
+    backdrop-filter: blur(32px);
+    width: 88%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, 0.1);
+    padding: 1rem 1.75rem;
+    border-radius: 4rem;
+    z-index: 99999999;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        color: $textColor;
+        font-size: 1.5rem;
+        transition: color 0.4s;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+/*=============== EXPAND LIST ===============*/
+.nav__expand {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background-color: $blueColor;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav__expand-icon {
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.4s;
+}
+
+.nav__expand-list {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    background: #252a42;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, 0.1);
+    width: max-content;
+    margin-inline: auto;
+    padding: 15px 20px;
+    border-radius: 4rem;
+    display: flex;
+    column-gap: 2rem;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateY(5rem) scale(0.1);
+    transition: transform 0.5s cubic-bezier(0.5, 1.8, 0.4, 0.8);
+}
+
+.nav__expand-list li {
+    transform: translateY(-3rem);
+    transition: transform 0.4s;
+}
+
+.nav__expand-list li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.nav__expand-list li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.nav__expand-list li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.nav__expand-link {
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.4s;
+}
+
+.nav__expand-link i {
+    font-size: 1.5rem;
+}
+
+.nav__expand-link svg {
+    width: 22px;
+    height: 25px;
+    fill: $textColor;
+    transition: $transition;
+}
+
+.nav__expand-link span {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+
+.nav__expand-link:hover {
+    color: white;
+
+    & svg {
+        fill: $redColor;
+    }
+
+    .logout__link {
+        color: $redColor;
+    }
+}
+
+/* Show list */
+.show-list,
+.show-list li {
+    transform: translateY(0);
+}
+
+/* Rotate icon */
+.rotate-icon {
+    transform: rotate(135deg);
+}
+
+/* Active link */
+.active-link {
+    color: white;
+}

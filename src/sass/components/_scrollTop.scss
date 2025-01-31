@@ -1,0 +1,28 @@
+/* Rolagem para cima */
+.scroll-top {
+    background-color: $blueColor;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 3%;
+    right: 1.75%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2px;
+    transition: $transition;
+    z-index: 1000000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $darkBlueColor;
+    }
+
+    & svg {
+        width: 22px;
+        height: 22px;
+        stroke-width: 1px;
+        stroke: white;
+    }
+}

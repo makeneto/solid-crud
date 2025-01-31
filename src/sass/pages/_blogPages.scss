@@ -1,0 +1,264 @@
+/* Blog pages */
+.blogPage {
+    margin: 10% $horizontal-space 6%;
+    display: flex;
+    gap: 3%;
+    overflow: hidden;
+
+    &__aside {
+        width: 40%;
+
+        &--search {
+            background-color: #1c2136;
+            border: $solidBorder;
+            border-radius: 9px;
+            margin-bottom: 8%;
+            padding: 14px;
+        }
+    }
+
+    &__blocks {
+        background-color: #1c2136;
+        border: $solidBorder;
+        border-radius: 9px;
+        margin-bottom: 8%;
+        padding: 36px;
+    }
+
+    .fromSearch {
+        background-color: $bodyColor;
+        border: $solidBorder;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        padding-right: 14px;
+
+        & input {
+            background-color: $bodyColor;
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 55px;
+            cursor: pointer;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            padding: 16px 24px;
+            color: $textColor;
+            font-weight: 400;
+            word-spacing: 1.5px;
+            line-height: 25px;
+            font-size: 17px;
+        }
+
+        & button {
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    .aside {
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        &--sutitle {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            margin: 20px 0 6px;
+        }
+
+        .small__title {
+            color: white;
+            font-size: 18px;
+        }
+    }
+
+    .categories__list {
+        list-style-type: none;
+        list-style-position: inside;
+        display: grid;
+        gap: 22px;
+
+        & li a {
+            color: $textColor;
+            transition: $transition;
+            width: fit-content;
+
+            &:hover {
+                color: $blueColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .posts {
+        display: grid;
+        gap: 30px;
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+
+            .post {
+                &__img {
+                    width: 39%;
+                    height: 100%;
+
+                    &--bg {
+                        width: 100%;
+                        border-radius: 2px;
+                    }
+                }
+
+                &__title a {
+                    color: white;
+                    font-weight: 400;
+                    transition: $transition;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $blueColor;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .blogPage__content {
+        width: 75%;
+        padding: 40px;
+
+        &--image {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        &--image1 {
+            background: $blueColor url(/src/assets/images/5dicas-blog.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image2 {
+            background: $blueColor url(/src/assets/images/promocao-blog.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image3 {
+            background: $blueColor url(/src/assets/images/tendencias-blog.jpg) no-repeat center center; 
+            background-size: cover;
+        }
+
+        &--image4 {
+            background: $blueColor url(/src/assets/images/prefectforyou-blog.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image5 {
+            background: $blueColor url(/src/assets/images/retro-vs-moderno-blog.jpeg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image6 {
+            background: $blueColor url(/src/assets/images/indies-blog.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image7 {
+            background: $blueColor url(/src/assets/images/setup-games-blog.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--image8 {
+            background: $blueColor url(/src/assets/images/playing-boring.jpg) no-repeat center center;
+            background-size: cover;
+        }
+
+        &--title {
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 48px;
+            margin: 1.75rem 0 2rem;
+        }
+
+        &--data {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 1.25rem;
+            font-weight: 400;
+            word-spacing: 1.5px;
+            line-height: 25px;
+        }
+
+        &--footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    .datasBlog {
+        color: #757693;
+        font-size: 17px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+
+        &--svg {
+            display: flex !important;
+            gap: 15px !important;
+        }
+
+        &--svg svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
+
+    .content--footer {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__tags {
+        display: flex;
+        gap: 12px;
+    }
+
+
+    &__list {
+        width: 60%;
+        list-style-type: disc;
+        list-style-position: inside;
+        display: grid;
+        gap: 16px;
+        margin-left: 9px;
+
+        li {
+            color: $textColor;
+            line-height: 27px;
+            text-indent: -22px;
+            padding-left: 6%;
+        }
+    }
+
+    .blogPage__conclusion {
+        background-color: $bodyColor;
+        padding: 30px;
+        margin-top: 4%;
+
+        &--text {
+            line-height: 24px;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}

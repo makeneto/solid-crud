@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solid">
+    <meta name="description" content="Venda de jogos online">
+    <meta name="keywords" content="Solid, Solid Games, jogos, Venda de jogos online">
+    <!-- Partilhar website-->
+    <meta property="og:title" content="Solid">
+    <meta property="og:description" content="Venda de jogos online">
+    <meta property="og:image" content="Imagem">
+    <meta property="og:url" content="URL da página">
+    <meta name="theme-color" content="#181C31">
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Solid - A Comunidade Gamer: Como Se Conectar e Interagir</title>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav id="main__nav">
+        <div class="nav__logo">
+            <img src="/src/assets/images/logo-dark.svg" alt="" class="logo">
+        </div>
+
+        <div class="menu-links">
+            <p><a href="/index.html" target="_self" class="page__link">Home</a></p>
+            <ul>
+                <li class="stores">
+                    <a href="/src/pages/stores/games.html" target="_self" class="page__link">Loja</a>
+                </li>
+            </ul>
+            <p><a href="/src/pages/blogs.html" target="_self" class="page__link">Blogs</a></p>
+            <p><a href="/index.html#features" target="_self" class="page__link">Recursos</a></p>
+            <p><a href="/src/pages/support.html" target="_self" class="page__link">Suporte</a></p>
+        </div>
+
+        <div class="nav__others">
+            <a href="/src/pages/cadastro/main.html" target="_self" id="logOut">Terminar sessão</a>
+        </div>
+    </nav>
+
+    <!-- Nav bar Mobile -->
+    <article class="intro__header">
+        <img src="/src/assets/images/logo-dark.svg" alt="" class="logo__tablet">
+    </article>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <a href="/index.html" class="nav__link">
+                    <i class="ri-home-smile-2-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="/src/pages/stores/games.html" class="nav__link">
+                    <i class="ri-store-line"></i>
+                </a>
+            </li>
+
+            <!-- Expand list -->
+            <li>
+                <button class="nav__expand" id="nav-expand">
+                    <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+                </button>
+
+                <ul class="nav__expand-list" id="nav-expand-list">
+                    <li>
+                        <a href="/src/pages/support.html" class="nav__expand-link">
+                            <i class="ri-customer-service-2-line"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/blogs.html" class="nav__expand-link">
+                            <i class="ri-news-line"></i>
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/cadastro/main.html" class="nav__expand-link">
+                            <i class="ri-logout-box-r-line"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-gamepad-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-search-line"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="blogPage">
+        <aside class="blogPage__aside">
+            <div class="blogPage__aside--search">
+                <form class="fromSearch">
+                    <input type="text" name="searchBlog" id="searchBlog" placeholder="Pesquise aqui..." required>
+
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="search__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="blogPage__aside--categories blogPage__blocks">
+                <h3 class="aside__title">Categorias</h3>
+                <ol class="categories__list">
+                    <li><a href="/src/pages/blogs/categories/comununidade.html">Comunidade</a></li>
+                    <li><a href="/src/pages/blogs/categories/performance.html">Performance</a></li>
+                    <li><a href="/src/pages/blogs/categories/jogos.html">Jogos</a></li>
+                    <li><a href="/src/pages/blogs/categories/tendencias.html">Tendências</a></li>
+                </ol>
+            </div>
+
+            <div class="blogPage__aside--posts blogPage__blocks">
+                <h3 class="aside__title">Posts Relacionados</h3>
+                <div class="posts">
+                    <div class="posts">
+                        <div class="post1">
+                            <div class="post__img">
+                                <img src="/src/assets/images/retro-vs-moderno-blog.jpeg" alt="" class="post__img--bg">
+                            </div>
+                            <h4 class="post__title"><a
+                                    href="/src/pages/blogs/retro-vs-moderno-a-evolução-dos-jogos-digitais.html">Retro
+                                    vs. Moderno: A Evolução dos Jogos Digitais</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <article class="blogPage__content  blogPage__blocks">
+            <div class="blogPage__content--header">
+                <div class="blogPage__content--image blogPage__content--image8"></div>
+                <div class="blogPage__content--description">
+                    <h1 class="blogPage__content--title">A Comunidade Gamer: Como Se Conectar e Interagir</h1>
+                    <div class="blogPage__content--data">
+                        <p>Autor: <span class="datasBlog">Solid Blogs</span></p>
+                        <p>Publicado aos: <span class="datasBlog">16 de Setembro de 2024</span></p>
+                        <p>Categoria: <span class="datasBlog">Comunidade</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__content--texts">
+                <div class="paragraphs">
+                    <p class="small__text">O mundo dos jogos é muito mais do que apenas jogar. Ele se tornou um espaço
+                        social vibrante, onde gamers de todos os lugares compartilham suas experiências, trocam dicas e
+                        criam conexões. Estar envolvido na <b>comunidade gamer</b> pode transformar sua experiência de
+                        jogo, proporcionando novas amizades, oportunidades de aprendizado e até mesmo parcerias para
+                        competições ou projetos.</p>
+
+                    <h3 class="aside__title--sutitle">1. Participe de Fóruns e Redes Sociais</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text">Os fóruns e as redes sociais são uma das melhores maneiras de interagir
+                            com outros gamers. Plataformas como <b>Reddit</b>, <b>Discord</b> e até mesmo </b>Twitter
+                            X</b> possuem espaços dedicados a jogos específicos e temas variados dentro do universo
+                            gamer. Nesses espaços, você pode encontrar discussões sobre novidades, análises de jogos,
+                            tutoriais e até mesmo formar equipes para jogar online.</p>
+
+                        <p class="small__text"><b>Dica</b>: Participe de fóruns dedicados aos seus jogos favoritos. O
+                            Reddit, por exemplo, tem subreddits para praticamente todos os jogos populares, desde indie
+                            até AAA, onde você pode tirar dúvidas, encontrar novos amigos e até participar de
+                            competições e eventos.
+                        </p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>No <b>Discord</b>, explore servidores dedicados ao seu estilo de jogo ou crie seu próprio
+                            servidor para jogar com amigos.</li>
+                        <li>Grupos no <b>Facebook</b> e comunidades no <b>Steam</b> também oferecem ótimas oportunidades
+                            para conversar sobre seus jogos preferidos.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">2. Assista e Interaja com Streamers</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text"><b>Streamers</b> e criadores de conteúdo são uma parte crucial da
+                            comunidade gamer moderna. Plataformas como <b>Twitch</b> e <b>YouTube Gaming</b> permitem
+                            que você assista a jogadores de todo o mundo enquanto eles jogam seus jogos favoritos, seja
+                            para entretenimento, aprendizado ou simplesmente para se divertir junto com eles.</p>
+
+                        <p class="small__text"><b>Dica</b>: Ao assistir a uma live no Twitch ou em outra plataforma,
+                            aproveite para participar ativamente no chat. Faça perguntas, envie sugestões e interaja com
+                            outros espectadores para se sentir mais conectado à comunidade.
+                        </p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Muitos streamers possuem <b>comunidades próprias</b> em redes como Discord, onde você pode
+                            continuar a interação além das lives.</li>
+                        <li>Alguns streamers fazem <b>multiplayer com seus seguidores</b>, oferecendo a chance de jogar
+                            ao lado de seus ídolos.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">3. Participe de Competições e Torneios</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text">Competir em <b>torneios</b> e campeonatos de jogos é uma das maneiras
+                            mais emocionantes de interagir com a comunidade gamer. Existem torneios para todos os
+                            níveis, desde iniciantes até profissionais. Participar desses eventos não só melhora suas
+                            habilidades, mas também permite que você conheça pessoas com interesses similares.</p>
+
+                        <p class="small__text"><b>Dica</b>: Fique atento a competições organizadas por plataformas como
+                            <b>ESL</b>, </b>Faceit</b> e até pelos próprios desenvolvedores dos jogos. Muitas vezes,
+                            essas competições têm categorias para jogadores casuais e competitivos.
+                        </p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Jogos como <b>League of Legends</b>, <b>CS</b>, <b>FC</b>, e muitos outros frequentemente
+                            realizam torneios abertos.</li>
+                        <li>Se torneios oficiais parecerem intimidantes, comece participando de eventos
+                            <b>comunitários</b> e locais.
+                        </li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">4. Crie Conteúdo e Compartilhe Sua Paixão</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text">Uma ótima maneira de se conectar com outros gamers é criando e
+                            compartilhando seu próprio conteúdo. Seja através de vídeos no <b>YouTube</b>, transmissões
+                            no <b>Twitch</b> ou postagens no <b>Instagram</b>, compartilhar suas experiências pode
+                            ajudar você a se conectar com outros jogadores que compartilham os mesmos interesses.</p>
+
+                        <p class="small__text"><b>Dica</b>: Não tenha medo de começar pequeno. Mesmo com uma audiência
+                            pequena, criar conteúdo sobre o que você ama – seja um guia de jogo, gameplay, análise ou
+                            momentos engraçados – vai atrair outros jogadores com os mesmos interesses.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Colabore com outros criadores de conteúdo para ampliar sua rede.</li>
+                        <li>Considere criar um <b>blog de jogos</b> para compartilhar suas reflexões e dicas.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">5. Participe de Eventos e Feiras de Jogos</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text">Eventos e feiras de jogos são ótimas oportunidades para se conectar com a
+                            comunidade gamer de forma presencial. Em eventos como a <b>Gamescom</b>, <b>E3</b> e a
+                            <b>Brasil Game Show</b>, você pode conhecer outros fãs, testar novos jogos e interagir
+                            diretamente com desenvolvedores e streamers.
+                        </p>
+
+                        <p class="small__text"><b>Dica</b>: Procure eventos menores em sua região, como <b>lan
+                                parties</b>, <b>campeonatos locais</b> ou encontros de fãs de jogos específicos. Esses
+                            eventos são mais íntimos e podem resultar em amizades duradouras.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Muitos desses eventos também ocorrem de forma <b>online</b>, então você pode participar de
+                            qualquer lugar do mundo.</li>
+                        <li>Além de jogar e interagir, esses eventos muitas vezes oferecem palestras, painéis e
+                            workshops com profissionais da indústria dos games.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">6. Apoie Desenvolvedores Indie</h3>
+
+                    <div class="paragraphs">
+                        <p class="small__text">A comunidade dos <b>jogos indie</b> é uma das mais acolhedoras e
+                            interativas no mundo dos games. Desenvolvedores indie frequentemente interagem diretamente
+                            com seus jogadores, recebendo feedback, participando de discussões e até mesmo pedindo ajuda
+                            para testar novos recursos. Isso cria uma conexão única entre jogadores e criadores, que nem
+                            sempre é possível com grandes estúdios.</p>
+
+                        <p class="small__text"><b>Dica</b>: Explore plataformas como o <b>Itch.io</b> e participe de
+                            fóruns e discussões sobre seus jogos indie favoritos. Além disso, muitos desenvolvedores
+                            indie têm perfis ativos no <b>Twitter</b> e outras redes sociais, onde compartilham
+                            atualizações e interagem diretamente com os jogadores.</p>
+                    </div>
+
+                    <div class="blogPage__conclusion">
+                        <p class="blogPage__conclusion--text">Conectar-se à comunidade gamer vai além de apenas jogar.
+                            Trata-se de compartilhar experiências, fazer novos amigos e explorar o mundo dos jogos de
+                            forma mais profunda e significativa. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__footer">
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Partilhar em:</p>
+                    <div class="social__media__footer blogPage__footer--svg">
+                        <!-- X -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <!-- Discord -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                            </svg>
+                        </a>
+                        <!-- Twitch -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Hashtags:</p>
+                    <div class="blogPage__tags">
+                        <span class="datasBlog">#tendencias</span>
+                        <span class="datasBlog">#solidgames</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content__footer">
+            <div class="content__above">
+                <div class="content__footer1">
+                    <div class="footer__intro">
+                        <img src="/src/assets/images/logo-dark.svg" alt="logo da solid" class="footer__logo">
+                        <p class="small__text">Desperte o gamer que existe em você.</p>
+                    </div>
+                    <div class="footer__contact">
+                        <p class="small__text contact__title">CONTACTO</p>
+                        <h3>solid@gmail.com</h3>
+                    </div>
+                </div>
+
+                <div class="content__footer2">
+                    <div class="last__links">
+                        <h3>Links rápidos</h3>
+                        <ol class="footer__links">
+                            <li><a href="/index.html" target="_self">Home</a></li>
+                            <li><a href="/src/pages/store.html" target="_self">Loja</a></li>
+                            <li><a href="/src/pages/blogs.html" target="_self">Blogs</a></li>
+                            <li><a href="/index.html#features" target="_self">Recursos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="Suporte">
+                        <h3>Suporte</h3>
+                        <ol class="footer__links">
+                            <li><a href="#" target="_self">Empresa</a></li>
+                            <li><a href="#" target="_self">Imprensa</a></li>
+                            <li><a href="#" target="_self">Novidades e blogs</a></li>
+                            <li><a href="#" target="_self">Contacte-nos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="newsletter__footer">
+                        <h3>Newsletter</h3>
+                        <p class="small__text">Inscreva-se para receber atualizações sobre lançamentos, promoções e
+                            mais.</p>
+                        <form id="send__newsletter">
+                            <input type="email" name="newsletter" id="newsletter__email" placeholder="Endereço de email"
+                                required>
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__below">
+                <ol class="other__links">
+                    <li><a href="/src/pages/use-terms.html">Termos de uso</a></li>
+                    <li><a href="/src/pages/privacy-policy.html">Política de privacidade</a></li>
+                    <li><a href="./support.html">Suporte</a></li>
+                </ol>
+
+                <div class="copyright">
+                    <p class="small__text">© <span class="year__footer"></span> Solid. Todos os direitos reservados
+                    </p>
+                </div>
+
+                <div class="social__media__footer">
+                    <!-- X -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitch -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+        integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/js/pages.js"></script>
+</body>
+
+</html>

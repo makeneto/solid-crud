@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solid">
+    <meta name="description" content="Venda de jogos online">
+    <meta name="keywords" content="Solid, Solid Games, jogos, Venda de jogos online">
+    <!-- Partilhar website-->
+    <meta property="og:title" content="Solid">
+    <meta property="og:description" content="Venda de jogos online">
+    <meta property="og:image" content="Imagem">
+    <meta property="og:url" content="URL da página">
+    <meta name="theme-color" content="#181C31">
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- Links das animações -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- Alerta de sucesso -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Solid - Entrar</title>
+</head>
+
+<body>
+    <form class="cadastro"  id="signIn">
+        <a href="/src/pages/cadastro/main.html" class="cadastro__back">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </a>
+
+        <img src="/src/assets/images/logo-dark.svg" alt="logo" class="cadastro__logo">
+
+        <div class="cadastro__first__block">
+            <h2>Bem-vindo de Volta!</h2>
+            <p class="small__text">Acesse sua conta para descobrir novos jogos e ofertas exclusivas!</p>
+
+
+            <div class="cadastro__grid">
+                <label for="email">
+                    <p>Email</p>
+                    <input type="email" name="iemail" id="email" placeholder="Digite seu email" required>
+                </label>
+
+                <label for="senha">
+                    <p>Senha</p>
+                    <input type="password" name="isenha" id="senha" placeholder="Digite sua senha" required>
+                </label>
+
+                <h4 class="cadastro__grid--forget"><a href="/src/pages/cadastro/forgot-password.html">Esqueceu a senha?</a></h5>
+
+                <a href="/src/pages/cadastro/signIn.html" class="cadastro__grid--button cadastro__grid--submit"><button type="submit">Entrar</button></a>
+            </div>
+        </div>
+
+        <p class="cadastro__divider">Ou entrar com</p>
+    </form>
+    <div class="cadastro__second__block">
+        <a href="/src/pages/cadastro/signUp.html" class="cadastro__second__block--enterWidth">
+            <button>
+                <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="svg1">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M0.69116 21.9548C-0.506476 22.7935 -0.284724 24.2384 2.44769 25.1419C5.18011 26.0455 8.35603 26.2323 11.1505 25.729C11.0707 25.729 11.3102 25.729 11.1505 25.729V22.8774L8.43588 23.8C7.39792 24.1355 6.35997 24.2194 5.32202 23.9677C4.5236 23.7161 4.68328 23.2129 5.64139 22.7935L11.1505 20.7806V17.6774L3.48565 20.4452C2.52754 20.7806 1.56943 21.2839 0.69116 21.9548ZM19.2146 9.37419V17.5097C22.4881 19.1871 25.0431 17.5097 25.0431 13.1484C25.0431 8.70323 23.5261 6.69032 19.1348 5.09677C16.8193 4.25806 14.4241 3.50323 12.0288 3V27.2387L17.6178 29V8.61935C17.6178 7.69677 17.6178 7.02581 18.2565 7.27742C19.1348 7.52903 19.2146 8.45161 19.2146 9.37419ZM29.5941 20.0258C27.2787 19.1871 24.8036 18.8516 22.4083 19.1032C21.0779 19.1906 19.8294 19.5869 18.5759 20.0258V23.2968L23.7656 21.2839C24.8036 20.9484 25.8415 20.8645 26.8795 21.1161C27.6779 21.3677 27.5182 21.871 26.5601 22.2903L18.5759 25.3935V28.5806L29.5941 24.3032C30.3925 23.9677 31.1111 23.5484 31.7499 22.8774C32.3088 22.0387 32.0692 20.8645 29.5941 20.0258Z"
+                            fill="#0070D1"></path>
+                    </g>
+                </svg>
+                <!-- Continuar com Playstation -->
+            </button>
+        </a>
+
+        <a href="/src/pages/cadastro/signUp.html" class="cadastro__second__block--enterWidth">
+            <button>
+                <svg width="31px" height="31px" viewBox="-0.5 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" class="svg2">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>Google-color</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs> </defs>
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Color-" transform="translate(-401.000000, -860.000000)">
+                                <g id="Google" transform="translate(401.000000, 860.000000)">
+                                    <path
+                                        d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24"
+                                        id="Fill-1" fill="#FBBC05"> </path>
+                                    <path
+                                        d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333"
+                                        id="Fill-2" fill="#EB4335"> </path>
+                                    <path
+                                        d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667"
+                                        id="Fill-3" fill="#34A853"> </path>
+                                    <path
+                                        d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24"
+                                        id="Fill-4" fill="#4285F4"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <!-- Continuar com Google -->
+            </button>
+        </a>
+
+        <a href="/src/pages/cadastro/signUp.html" class="cadastro__second__block--enterWidth">
+            <button>
+                <svg width="32px" height="32px" viewBox="0 0 20.00 20.00" xmlns="http://www.w3.org/2000/svg"
+                    fill="#1877F2" stroke="#1877F2" stroke-width="0.0002" class="svg3">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                        stroke-width="0.24"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <rect x="0" fill="none" width="20" height="20"></rect>
+                        <g>
+                            <path
+                                d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46V18z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <!-- Continuar com Facebook -->
+            </button>
+        </a>
+
+        <a href="/src/pages/cadastro/signUp.html" class="cadastro__second__block--enterWidth">
+            <button>
+                <svg width="30px" height="30px" viewBox="-1.5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" class="svg4">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>apple [#173]</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs> </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-102.000000, -7439.000000)"
+                                fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M57.5708873,7282.19296 C58.2999598,7281.34797 58.7914012,7280.17098 58.6569121,7279 C57.6062792,7279.04 56.3352055,7279.67099 55.5818643,7280.51498 C54.905374,7281.26397 54.3148354,7282.46095 54.4735932,7283.60894 C55.6455696,7283.69593 56.8418148,7283.03894 57.5708873,7282.19296 M60.1989864,7289.62485 C60.2283111,7292.65181 62.9696641,7293.65879 63,7293.67179 C62.9777537,7293.74279 62.562152,7295.10677 61.5560117,7296.51675 C60.6853718,7297.73474 59.7823735,7298.94772 58.3596204,7298.97372 C56.9621472,7298.99872 56.5121648,7298.17973 54.9134635,7298.17973 C53.3157735,7298.17973 52.8162425,7298.94772 51.4935978,7298.99872 C50.1203933,7299.04772 49.0738052,7297.68074 48.197098,7296.46676 C46.4032359,7293.98379 45.0330649,7289.44985 46.8734421,7286.3899 C47.7875635,7284.87092 49.4206455,7283.90793 51.1942837,7283.88393 C52.5422083,7283.85893 53.8153044,7284.75292 54.6394294,7284.75292 C55.4635543,7284.75292 57.0106846,7283.67793 58.6366882,7283.83593 C59.3172232,7283.86293 61.2283842,7284.09893 62.4549652,7285.8199 C62.355868,7285.8789 60.1747177,7287.09489 60.1989864,7289.62485"
+                                        id="apple-[#173]"> </path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <!-- Continuar com Apple -->
+            </button>
+        </a>
+    </div>
+
+    <p class="cadastro__first__block--link">Não tens uma conta? <a
+            href="/src/pages/cadastro/signUp.html">Cadastrar-se</a></p>
+    <p class="cadastro__first__block--version small__text">Solid v1.2.1</p>
+
+
+    <script src="/src/js/cadastro/signIn.js"></script>
+</body>
+
+</html>

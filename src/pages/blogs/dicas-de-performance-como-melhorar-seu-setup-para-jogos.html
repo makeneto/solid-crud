@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solid">
+    <meta name="description" content="Venda de jogos online">
+    <meta name="keywords" content="Solid, Solid Games, jogos, Venda de jogos online">
+    <!-- Partilhar website-->
+    <meta property="og:title" content="Solid">
+    <meta property="og:description" content="Venda de jogos online">
+    <meta property="og:image" content="Imagem">
+    <meta property="og:url" content="URL da página">
+    <meta name="theme-color" content="#181C31">
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Solid - Dicas de Performance: Como Melhorar Seu Setup</title>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav id="main__nav">
+        <div class="nav__logo">
+            <img src="/src/assets/images/logo-dark.svg" alt="" class="logo">
+        </div>
+
+        <div class="menu-links">
+            <p><a href="/index.html" target="_self" class="page__link">Home</a></p>
+            <ul>
+                <li class="stores">
+                    <a href="/src/pages/stores/games.html" target="_self" class="page__link">Loja</a>
+                </li>
+            </ul>
+            <p><a href="/src/pages/blogs.html" target="_self" class="page__link">Blogs</a></p>
+            <p><a href="/index.html#features" target="_self" class="page__link">Recursos</a></p>
+            <p><a href="/src/pages/support.html" target="_self" class="page__link">Suporte</a></p>
+        </div>
+
+        <div class="nav__others">
+            <a href="/src/pages/cadastro/main.html" target="_self" id="logOut">Terminar sessão</a>
+        </div>
+    </nav>
+
+    <!-- Nav bar Mobile -->
+    <article class="intro__header">
+        <img src="/src/assets/images/logo-dark.svg" alt="" class="logo__tablet">
+    </article>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <a href="/index.html" class="nav__link">
+                    <i class="ri-home-smile-2-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="/src/pages/stores/games.html" class="nav__link">
+                    <i class="ri-store-line"></i>
+                </a>
+            </li>
+
+            <!-- Expand list -->
+            <li>
+                <button class="nav__expand" id="nav-expand">
+                    <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+                </button>
+
+                <ul class="nav__expand-list" id="nav-expand-list">
+                    <li>
+                        <a href="/src/pages/support.html" class="nav__expand-link">
+                            <i class="ri-customer-service-2-line"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/blogs.html" class="nav__expand-link">
+                            <i class="ri-news-line"></i>
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/cadastro/main.html" class="nav__expand-link">
+                            <i class="ri-logout-box-r-line"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-gamepad-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-search-line"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="blogPage">
+        <aside class="blogPage__aside">
+            <div class="blogPage__aside--search">
+                <form class="fromSearch">
+                    <input type="text" name="searchBlog" id="searchBlog" placeholder="Pesquise aqui..." required>
+
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="search__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="blogPage__aside--categories blogPage__blocks">
+                <h3 class="aside__title">Categorias</h3>
+                <ol class="categories__list">
+                    <li><a href="/src/pages/blogs/categories/comununidade.html">Comunidade</a></li>
+                    <li><a href="/src/pages/blogs/categories/performance.html">Performance</a></li>
+                    <li><a href="/src/pages/blogs/categories/jogos.html">Jogos</a></li>
+                    <li><a href="/src/pages/blogs/categories/tendencias.html">Tendências</a></li>
+                </ol>
+            </div>
+
+            <div class="blogPage__aside--posts blogPage__blocks">
+                <h3 class="aside__title">Posts Relacionados</h3>
+                <div class="posts">
+                    <div class="post1">
+                        <div class="post__img">
+                            <img src="/src/assets/images/5dicas-blog.jpg" alt="" class="post__img--bg">
+                        </div>
+                        <h4 class="post__title"><a
+                                href="/src/pages/blogs/5-dicas-para-melhorar-sua-performance-em-jogos.html">5 Dicas para
+                                Melhorar sua Performance em Jogos</a></h4>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <article class="blogPage__content  blogPage__blocks">
+            <div class="blogPage__content--header">
+                <div class="blogPage__content--image blogPage__content--image7"></div>
+                <div class="blogPage__content--description">
+                    <h1 class="blogPage__content--title">Dicas de Performance: Como Melhorar Seu Setup Para Jogos</h1>
+                    <div class="blogPage__content--data">
+                        <p>Autor: <span class="datasBlog">Solid Blogs</span></p>
+                        <p>Publicado aos: <span class="datasBlog">16 de Outubro de 2024</span></p>
+                        <p>Categoria: <span class="datasBlog">Performance</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__content--texts">
+                <div class="paragraphs">
+                    <div class="paragraphs">
+                        <p class="small__text">Se você é um gamer que busca a melhor performance, sabe o quanto um setup
+                            bem ajustado pode fazer toda a diferença na jogabilidade. Desde a escolha dos componentes de
+                            hardware até as configurações otimizadas de software, muitos fatores influenciam o
+                            desempenho geral do seu sistema. Se os jogos estão lentos, com travamentos ou não estão
+                            rodando como deveriam, talvez seja hora de dar uma atenção especial ao seu <b>setup de
+                                jogos</b>.</p>
+
+                        <p class="small__text">Aqui estão algumas dicas valiosas que ajudarão você a melhorar o
+                            desempenho do seu computador ou console e garantir uma experiência de jogo mais fluida e
+                            agradável. Na <b>Solid</b>, estamos sempre prontos para oferecer orientações e produtos que
+                            maximizem sua performance!</p>
+                    </div>
+
+                    <h3 class="aside__title--sutitle">1. Escolha a Placa de Vídeo Ideal</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">A <b>placa de vídeo (GPU)</b> é um dos componentes mais importantes para
+                            jogos de alta qualidade. Um bom desempenho gráfico significa que você pode aproveitar
+                            visuais impressionantes sem comprometer a taxa de quadros por segundo (FPS). Se você está
+                            experimentando lag ou baixa resolução, pode ser a hora de fazer um upgrade.</p>
+
+                        <p class="small__text"><b>Dica</b>: Opte por uma placa de vídeo que atenda às demandas dos jogos
+                            que você joga. Modelos como a <b>NVIDIA GeForce RTX</b> ou <b>AMD Radeon RX</b> são ótimas
+                            opções para quem busca uma performance de ponta em jogos modernos.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Verifique a compatibilidade com o seu sistema.</li>
+                        <li>Invista em uma GPU com suporte a ray tracing para gráficos mais realistas.</li>
+                        <li>Ajuste as configurações gráficas no jogo para equilibrar qualidade e desempenho.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">2. Invista em um Processador Poderoso</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">O <b>processador (CPU)</b> é o cérebro do seu setup. Ele gerencia as
+                            operações que acontecem no jogo e trabalha em conjunto com a GPU para garantir uma
+                            jogabilidade suave. Jogos modernos exigem bastante do processador, especialmente em mundos
+                            abertos ou jogos com muitos elementos simultâneos.</p>
+
+                        <p class="small__text"><b>Dica</b>: Se o seu processador não está conseguindo acompanhar a
+                            demanda dos jogos mais recentes, considere fazer um upgrade. Processadores como a linha
+                            <b>AMD Ryzen</b> e <b>Intel Core i7</b> ou <b>i9</b> são ideais para jogos mais exigentes.
+                        </p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Opte por CPUs com múltiplos núcleos para melhor processamento multitarefa.</li>
+                        <li>Fique de olho nas velocidades de clock: quanto mais rápido, melhor!</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">3. Aumente a Memória RAM</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">A <b>memória RAM</b> desempenha um papel crucial no desempenho dos jogos.
+                            Se você sente que seu computador está travando durante as partidas ou tem dificuldades ao
+                            rodar jogos mais pesados, aumentar a quantidade de RAM pode ser a solução.</p>
+
+                        <p class="small__text"><b>Dica</b>: 16 GB de RAM são recomendados para a maioria dos jogos
+                            atuais, mas se você estiver jogando títulos muito exigentes ou multitarefa, 32 GB pode ser
+                            ainda melhor.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Memórias com maiores frequências (MHz) podem melhorar o desempenho.</li>
+                        <li>Certifique-se de que sua placa-mãe é compatível com a quantidade e tipo de RAM que você
+                            deseja instalar.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">4. Otimize o Armazenamento com SSD</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">Os <b>discos de estado sólido (SSD)</b> são fundamentais para garantir
+                            tempos de carregamento rápidos e uma resposta mais ágil do sistema. Comparados aos discos
+                            rígidos tradicionais (HDD), os SSDs podem carregar jogos muito mais rapidamente, reduzindo a
+                            espera entre telas de carregamento e melhorando a performance geral do sistema.</p>
+
+                        <p class="small__text"><b>Dica</b>: Se você ainda usa um HDD, considere substituí-lo ou
+                            complementá-lo com um SSD. Jogos instalados em SSDs apresentam tempos de carregamento muito
+                            menores, o que melhora a fluidez da jogabilidade.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Prefira SSDs NVMe para maior velocidade de leitura e gravação.</li>
+                        <li>Instale seus jogos favoritos no SSD para tempos de resposta mais rápidos.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">5. Mantenha o Sistema Resfriado</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">A <b>temperatura</b> do seu sistema pode afetar diretamente o desempenho.
+                            Componentes como GPU e CPU tendem a aquecer durante longas sessões de jogo, e se não houver
+                            um resfriamento adequado, o sistema pode sofrer lentidão ou até desligar para evitar danos.
+                        </p>
+
+                        <p class="small__text"><b>Dica</b>: Instale um sistema de resfriamento eficiente, como coolers
+                            de qualidade ou até mesmo <b>resfriamento líquido</b> para setups mais avançados.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Verifique a ventilação do gabinete e mantenha-o limpo de poeira.</li>
+                        <li>Utilize programas para monitorar a temperatura do sistema e evitar superaquecimento.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">6. Atualize Drivers e Software</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">Manter seus <b>drivers</b> e o sistema operacional atualizados é
+                            essencial para garantir que seu hardware funcione corretamente com os jogos mais recentes.
+                            Isso inclui drivers de <b>GPU</b>, <b>chipset e até do sistema de áudio</b>. Muitas
+                            atualizações de drivers trazem melhorias de desempenho e compatibilidade para novos jogos.
+                        </p>
+
+                        <p class="small__text">Dica</b>: Sempre que possível, use o software oficial da fabricante da
+                            sua placa de vídeo, como <b>GeForce Experience</b> (NVIDIA) ou <b>Radeon Software</b> (AMD),
+                            para garantir que você está rodando a versão mais recente dos drivers.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Atualize também o sistema operacional para a versão mais recente disponível.</li>
+                        <li>Desative programas em segundo plano para liberar mais recursos do sistema.</li>
+                    </ol>
+
+                    <h3 class="aside__title--sutitle">7. Ajuste as Configurações Gráficas</h3>
+                    <div class="paragraphs">
+                        <p class="small__text">Se você já tem um bom setup, mas ainda está enfrentando problemas de
+                            performance, ajustar as <b>configurações gráficas</b> dos jogos pode ajudar. Nem sempre
+                            rodar os jogos na qualidade "Ultra" é o ideal, e você pode sacrificar alguns detalhes
+                            visuais em troca de uma jogabilidade mais fluida.</p>
+
+                        <p class="small__text"><b>Dica</b>: Comece ajustando a resolução e a qualidade de sombras e
+                            texturas. Reduzir esses itens pode aumentar significativamente a taxa de FPS sem comprometer
+                            tanto a qualidade visual.</p>
+                    </div>
+
+                    <ol class="blogPage__list">
+                        <li>Use ferramentas como <b>V-Sync</b> e <b>G-Sync</b> para melhorar a sincronização da tela.
+                        </li>
+                        <li>Tente jogar em resoluções mais baixas se o jogo estiver travando.</li>
+                    </ol>
+
+                    <div class="blogPage__conclusion">
+                        <p class="blogPage__conclusion--text">Melhorar o desempenho do seu setup de jogos é fundamental
+                            para garantir uma experiência de jogo imersiva e sem interrupções. Na <b>Solid</b>, estamos
+                            sempre prontos para ajudar você a encontrar os melhores componentes e dicas para otimizar
+                            sua jogabilidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__footer">
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Partilhar em:</p>
+                    <div class="social__media__footer blogPage__footer--svg">
+                        <!-- X -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <!-- Discord -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                            </svg>
+                        </a>
+                        <!-- Twitch -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Hashtags:</p>
+                    <div class="blogPage__tags">
+                        <span class="datasBlog">#tendencias</span>
+                        <span class="datasBlog">#solidgames</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content__footer">
+            <div class="content__above">
+                <div class="content__footer1">
+                    <div class="footer__intro">
+                        <img src="/src/assets/images/logo-dark.svg" alt="logo da solid" class="footer__logo">
+                        <p class="small__text">Desperte o gamer que existe em você.</p>
+                    </div>
+                    <div class="footer__contact">
+                        <p class="small__text contact__title">CONTACTO</p>
+                        <h3>solid@gmail.com</h3>
+                    </div>
+                </div>
+
+                <div class="content__footer2">
+                    <div class="last__links">
+                        <h3>Links rápidos</h3>
+                        <ol class="footer__links">
+                            <li><a href="/index.html" target="_self">Home</a></li>
+                            <li><a href="/src/pages/store.html" target="_self">Loja</a></li>
+                            <li><a href="/src/pages/blogs.html" target="_self">Blogs</a></li>
+                            <li><a href="/index.html#features" target="_self">Recursos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="Suporte">
+                        <h3>Suporte</h3>
+                        <ol class="footer__links">
+                            <li><a href="#" target="_self">Empresa</a></li>
+                            <li><a href="#" target="_self">Imprensa</a></li>
+                            <li><a href="#" target="_self">Novidades e blogs</a></li>
+                            <li><a href="#" target="_self">Contacte-nos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="newsletter__footer">
+                        <h3>Newsletter</h3>
+                        <p class="small__text">Inscreva-se para receber atualizações sobre lançamentos, promoções e
+                            mais.</p>
+                        <form id="send__newsletter">
+                            <input type="email" name="newsletter" id="newsletter__email" placeholder="Endereço de email"
+                                required>
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__below">
+                <ol class="other__links">
+                    <li><a href="/src/pages/use-terms.html">Termos de uso</a></li>
+                    <li><a href="/src/pages/privacy-policy.html">Política de privacidade</a></li>
+                    <li><a href="./support.html">Suporte</a></li>
+                </ol>
+
+                <div class="copyright">
+                    <p class="small__text">© <span class="year__footer"></span> Solid. Todos os direitos reservados
+                    </p>
+                </div>
+
+                <div class="social__media__footer">
+                    <!-- X -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitch -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+        integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/js/pages.js"></script>
+</body>
+
+</html>
