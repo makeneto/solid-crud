@@ -5790,14 +5790,16 @@ select {
     gap: 22px;
   }
   .cadastro__grid--button {
-    margin-top: 17px;
+    padding: 12px 0;
+    margin: 17px 0 15px;
   }
   .cadastro__grid--button button {
     font-size: 17px;
     padding: 11px 0;
   }
   .google__button {
-    padding: 5.5px;
+    padding: 7.7px;
+    font-size: 18px;
   }
   select {
     width: fit-content;
@@ -5983,7 +5985,7 @@ select {
     margin: 18px 0;
   }
   .cadastro__first__block--link {
-    margin: 42px 0 10px;
+    margin: 24px 0 10px;
   }
   .notFound__card {
     width: 79%;
