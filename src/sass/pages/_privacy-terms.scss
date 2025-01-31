@@ -1,0 +1,32 @@
+.privacy {
+    margin: 11% calc($horizontal-space + 5%) 8%;
+
+    &__main--title {
+        font-size: 44px;
+        line-height: 55px;
+        text-align: center;
+        margin-bottom: 92px;
+    }
+
+    &__subtitle {
+        font-size: 32px;
+        margin: 32px 0 3px;
+
+        &--small {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    .solid__link {
+
+        &:link,
+        &:visited {
+            color: $blueColor;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

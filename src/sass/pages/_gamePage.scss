@@ -1,0 +1,763 @@
+#game__page {
+    margin-top: 4%;
+}
+
+.headerGame {
+    background-color: $darkGray;
+    width: 100%;
+    height: 537px;
+    position: relative;
+
+    &__inf {
+        width: 650.66px;
+        background-color: $darkGray;
+        padding: 32px 40px;
+        position: absolute;
+        left: 4%;
+        top: 64%;
+
+        & h1 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 15px;
+        }
+
+        & small {
+            font-size: 12px;
+            margin-bottom: 9px;
+        }
+
+        &--supported {
+            margin-top: 15px;
+            display: flex;
+            gap: 3px;
+        }
+
+        &--ratings {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+
+            & p {
+                font-size: 20px;
+            }
+
+            & div {
+                display: flex;
+                gap: 5px;
+
+                & svg {
+                    width: 18px;
+                }
+            }
+        }
+
+        &--price {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            font-size: 26px !important;
+            margin-top: 30px;
+
+            & span {
+                font-size: 19px !important;
+                color: $textColor;
+                text-decoration: line-through;
+            }
+        }
+
+        &--free {
+            font-size: 22px !important;
+            margin-top: 30px;
+            margin-bottom: 0 !important;
+        }
+
+        &--buy {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & a {
+                width: 90%;
+
+                & button {
+                    border: none;
+                    border-radius: 60px;
+                    background-color: $blueColor;
+                    color: white;
+                    font-size: 16px;
+                    padding: 10px 16px;
+                    transition: $transition;
+                    width: 100%;
+
+                    &:hover {
+                        filter: brightness(87%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.call-of-duty {
+    background: url('/src/assets/images/jogos/header-game-bg.avif') no-repeat right center;
+    background-size: cover;
+}
+
+.fc-25-ultimate {
+    background: url('/src/assets/images/jogos/fc-25-ultimate__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+.gow-ragnarok {
+    background: url('/src/assets/images/jogos/god-of-war__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+.gran-turismo7 {
+    background: url('/src/assets/images/jogos/gran-turismo7__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.nba-2k25 {
+    background: url('/src/assets/images/jogos/nba-2k25__bg.jpeg') no-repeat right top;
+    background-size: cover;
+}
+
+.spider-man2 {
+    background: url('/src/assets/images/jogos/spider-man2__bg.jpg') no-repeat right top;
+    background-size: cover;
+}
+
+.red-dead2 {
+    background: url('/src/assets/images/jogos/red-dead__bg.jpeg') no-repeat right top;
+    background-size: cover;
+}
+
+.fortnite {
+    background: url('/src/assets/images/jogos/fortnite__bg.jpg') no-repeat right top;
+    background-size: cover;
+}
+
+.efootball {
+    background: url('/src/assets/images/jogos/efootball__bg.jpg') no-repeat left top;
+    background-size: cover;
+}
+
+.gta-v {
+    background: url('/src/assets/images/jogos/gta-v__bg.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.roblox {
+    background: url('/src/assets/images/jogos/roblox__bg.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.minecraft {
+    background: url('/src/assets/images/jogos/minecraft__bg.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.tekken8 {
+    background: url('/src/assets/images/jogos/tekken8__bg.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.tlos {
+    background: url('/src/assets/images/jogos/the-last-of-us-part2-remastered__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.dragon-age {
+    background: url('/src/assets/images/jogos/dragon-age__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.dragon-ball {
+    background: url('/src/assets/images/jogos/dragon-ball__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.horizon-zero {
+    background: url('/src/assets/images/jogos/horizon-zero-dawn-remastered__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.sonic {
+    background: url('/src/assets/images/jogos/sonic-x-shadow__bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.metal-gear {
+    background: url('/src/assets/images/jogos/metal-gear__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+.dragons-dogma {
+    background: url('/src/assets/images/jogos/dragons-dogma2__bg.jpg') no-repeat right top;
+    background-size: cover;
+}
+
+.rise-ronnin {
+    background: url('/src/assets/images/jogos/rise-of-the-ronnin__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+.granblue-fantasy {
+    background: url('/src/assets/images/jogos/granblue-fantasy__bg.jpeg') no-repeat right center;
+    background-size: cover;
+}
+
+.final-fantasy {
+    background: url('/src/assets/images/jogos/final-fantasy__bg.jpg') no-repeat right top;
+    background-size: cover;
+}
+
+.resident-evil {
+    background: url('/src/assets/images/jogos/resident-evil__bg.jpeg') no-repeat right top;
+    background-size: cover;
+}
+
+.ratchet-clanck {
+    background: url('/src/assets/images/jogos/ratchet-&-clank__bg.jpeg') no-repeat right center;
+    background-size: cover;
+}
+
+.madden-nfl {
+    background: url('/src/assets/images/jogos/madden-nfl__bg.jpeg') no-repeat right center;
+    background-size: cover;
+}
+
+.cyberpunk {
+    background: url('/src/assets/images/jogos/cyber-punk__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+.destiny {
+    background: url('/src/assets/images/jogos/demo-destiny__bg.jpeg') no-repeat right center;
+    background-size: cover;
+}
+
+.death {
+    background: url('/src/assets/images/jogos/death__bg.jpg') no-repeat right center;
+    background-size: cover;
+}
+
+// Favorite button
+.heart-container {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+}
+
+.heart-container .checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.heart-container .svg-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-container .svg-outline,
+.heart-container .svg-filled {
+    fill: $heart-color;
+    position: absolute;
+}
+
+.heart-container .svg-filled {
+    animation: keyframes-svg-filled 1s;
+    display: none;
+}
+
+.heart-container .svg-celebrate {
+    position: absolute;
+    animation: keyframes-svg-celebrate .5s;
+    animation-fill-mode: forwards;
+    display: none;
+    stroke: $heart-color;
+    fill: $heart-color;
+    stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+    display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+    display: block
+}
+
+@keyframes keyframes-svg-filled {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+        filter: brightness(1.5);
+    }
+}
+
+@keyframes keyframes-svg-celebrate {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        filter: brightness(1.5);
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+        display: none;
+    }
+}
+
+#gameSupported {
+    font-size: 14px;
+    display: flex;
+    gap: 17px;
+    margin: 30px 4% 30px 47%;
+
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 53px;
+
+        & li {
+            text-indent: -24px;
+            line-height: 21px;
+
+            &::before {
+                content: ('✔️ ');
+            }
+        }
+    }
+
+    &--resources {
+        display: grid;
+        height: fit-content;
+
+        & div {
+            display: flex;
+            height: fit-content;
+            gap: 3px;
+            padding-bottom: 12px;
+
+            & img {
+                width: 54px;
+                height: 62px;
+            }
+        }
+
+        &--t {
+            width: fit-content !important;
+        }
+
+        & p {
+            width: fit-content;
+            padding-top: 10px;
+            border-top: 1px solid rgb(45, 47, 64);
+        }
+
+    }
+}
+
+.editions {
+    margin-top: 7%;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 4%;
+    }
+
+    &__card {
+        background-color: $darkGray;
+
+        &--bg {
+            width: 100%;
+            height: 300px;
+        }
+
+        &--content {
+            padding: 24px 32px;
+
+
+            & span {
+                text-align: center;
+            }
+        }
+
+        &--gameName {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 22px;
+        }
+
+        .container__features {
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 27px;
+        }
+
+        &--features {
+            display: flex;
+            gap: 47px;
+            margin-left: 17px;
+
+            & ul {
+                display: grid;
+                gap: 3px;
+                list-style: disc;
+                font-size: 14px;
+
+                & li {
+                    line-height: 22px;
+                }
+            }
+        }
+
+        &--price {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            font-size: 26px;
+            font-weight: 400;
+            margin: 30px 0;
+
+            & span {
+                font-size: 19px !important;
+                color: $textColor;
+                text-decoration: line-through;
+            }
+        }
+
+        &--free {
+            font-size: 22px;
+            font-weight: 400;
+            margin: 30px 0 0;
+        }
+
+        .one-line {
+            margin-top: 15.8%;
+        }
+
+        .one-line-v1 {
+            margin-top: 10.8%;
+        }
+
+        .two-line {
+            margin-top: 11%;
+        }
+
+        .two-lines-v2 {
+            margin-top: 10.9%;
+        }
+
+        .two-lines-v3 {
+            margin-top: 15.9%;
+        }
+
+        .four-line {
+            margin-top: 24.9%;
+        }
+
+        .five-line {
+            margin-top: 29%;
+        }
+
+        .seven-line {
+            margin-top: 34%;
+        }
+
+        .three-line {
+            margin-top: 16%;
+        }
+
+        .free-two {
+            margin-top: 29%;
+        }
+
+        .free--four-lines {
+            margin-top: 39%;
+        }
+    }
+}
+
+.classificacoes {
+    margin-top: 4%;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 3% 4%;
+
+        & div {
+            background-color: $darkGray;
+        }
+
+        &--start {
+            width: 35%;
+            padding: 32px;
+            position: relative;
+
+            & h1 {
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            & p {
+                font-size: 16px;
+            }
+
+            & button {
+                background: $blueColor;
+                color: white;
+                padding: 0.35em;
+                padding-left: 1.2em;
+                font-size: 18px;
+                font-weight: 500;
+                border-radius: 0.9em;
+                border: none;
+                letter-spacing: 0.05em;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                position: relative;
+                height: 2.8em;
+                padding-right: 3.3em;
+                cursor: pointer;
+                margin: 90px auto 0;
+
+                &:hover {
+                    cursor: pointer;
+
+                    & div {
+                        width: calc(100% - 0.6em);
+                    }
+                }
+
+                &:active {
+
+                    & div {
+                        transform: scale(0.95);
+                    }
+                }
+
+                & div {
+                    background: white;
+                    margin-left: 1em;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 2.2em;
+                    width: 2.2em;
+                    border-radius: 0.7em;
+                    box-shadow: 0.1em 0.1em 0.6em 0.2em var(--dark-purple);
+                    right: 0.3em;
+                    transition: all 0.3s;
+
+                    & svg {
+                        width: 1.1em;
+                        transition: transform 0.3s;
+                        color: $blueColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#ratings {
+    width: 65%;
+    padding: 32px;
+}
+
+.rating {
+    &__intro {
+        display: flex;
+        justify-content: space-between;
+
+        &--first {
+            & h5 {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+
+        &--second {
+            display: grid;
+            gap: 5px;
+
+            &-first {
+                display: flex;
+                align-items: end;
+                gap: 12px;
+
+                & h1 {
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+
+                & div {
+                    display: flex;
+                    gap: 7px;
+                    margin-bottom: 8px;
+
+                    svg {
+                        width: 24px;
+                    }
+                }
+            }
+
+            & p {
+                text-align: end;
+                font-size: 15px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+
+        &--stars {
+            display: flex;
+            gap: 3px;
+            height: 14px;
+            margin: 5px;
+
+            & svg {
+                width: 15px;
+                fill: white;
+            }
+        }
+
+        &--percent {
+            font-size: 16px !important;
+            font-weight: 400;
+            color: white;
+            height: 16px;
+            margin: 7px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        height: 8px;
+        background-color: $bodyColor !important;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        &--bar {
+            height: 100%;
+            background-color: $blueColor !important;
+            transition: width 0.3s ease-in-out;
+            border-radius: 999px;
+        }
+    }
+}
+
+.infoGame {
+    margin-top: 4%;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__block {
+        width: 49%;
+        margin: 3% auto;
+        padding: 40px;
+        background-color: $darkGray;
+
+        &--include {
+            color: $blueColor;
+            margin-bottom: 19px;
+            font-weight: 500;
+        }
+
+        &--paragraphs {
+            padding-top: 15px;
+            display: grid;
+            gap: 26px;
+
+            & p {
+                line-height: 26px;
+                color: $textColor;
+            }
+        }
+    }
+}
+
+.categoriaGame {
+    width: 49%;
+    margin: 3% auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    & p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: $textColor;
+    }
+
+    &__info {
+        width: 50%;
+        height: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 36px;
+    }
+
+    &__text {
+        padding-top: 0 !important;
+        width: 44%;
+        height: fit-content;
+    }
+}

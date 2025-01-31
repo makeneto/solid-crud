@@ -1,0 +1,70 @@
+/* Mensagem do colégio */
+.message__solid {
+    background: $blueColor;
+    display: flex;
+    gap: 16px;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 22px;
+    position: fixed;
+    top: 12%;
+    left: 56%;
+    z-index: 2;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(78, 78, 107, 0.2) 0px 7px 29px 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+
+    .solid__profile {
+        width: 52px;
+        height: 104%;
+        padding: 10%;
+        background-color: $bodyColor;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        & img {
+            width: 23px;
+        }
+
+    }
+
+    .imessage__logo {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        bottom: 10px;
+        left: 53px;
+    }
+
+    .message__content {
+        & h1 {
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        & p {
+            font-weight: 300;
+            font-size: 17px;
+            margin: 0;
+        }
+    }
+
+    .message__time {
+        display: flex;
+        align-items: start;
+
+        & p {
+            font-size: 17px;
+            color: $bodyColor;
+            padding-top: 7px;
+            margin: 0;
+        }
+    }
+}

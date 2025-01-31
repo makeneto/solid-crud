@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Solid">
+    <meta name="description" content="Venda de jogos online">
+    <meta name="keywords" content="Solid, Solid Games, jogos, Venda de jogos online">
+    <!-- Partilhar website-->
+    <meta property="og:title" content="Solid">
+    <meta property="og:description" content="Venda de jogos online">
+    <meta property="og:image" content="Imagem">
+    <meta property="og:url" content="URL da página">
+    <meta name="theme-color" content="#181C31">
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon">
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Solid - As Melhores Promoções de jogos: Economize em...</title>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav id="main__nav">
+        <div class="nav__logo">
+            <img src="/src/assets/images/logo-dark.svg" alt="" class="logo">
+        </div>
+
+        <div class="menu-links">
+            <p><a href="/index.html" target="_self" class="page__link">Home</a></p>
+            <ul>
+                <li class="stores">
+                    <a href="/src/pages/stores/games.html" target="_self" class="page__link">Loja</a>
+                </li>
+            </ul>
+            <p><a href="/src/pages/blogs.html" target="_self" class="page__link">Blogs</a></p>
+            <p><a href="/index.html#features" target="_self" class="page__link">Recursos</a></p>
+            <p><a href="/src/pages/support.html" target="_self" class="page__link">Suporte</a></p>
+        </div>
+
+        <div class="nav__others">
+            <a href="/src/pages/cadastro/main.html" target="_self" id="logOut">Terminar sessão</a>
+        </div>
+    </nav>
+
+    <!-- Nav bar Mobile -->
+    <article class="intro__header">
+        <img src="/src/assets/images/logo-dark.svg" alt="" class="logo__tablet">
+    </article>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <a href="/index.html" class="nav__link">
+                    <i class="ri-home-smile-2-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="/src/pages/stores/games.html" class="nav__link">
+                    <i class="ri-store-line"></i>
+                </a>
+            </li>
+
+            <!-- Expand list -->
+            <li>
+                <button class="nav__expand" id="nav-expand">
+                    <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+                </button>
+
+                <ul class="nav__expand-list" id="nav-expand-list">
+                    <li>
+                        <a href="/src/pages/support.html" class="nav__expand-link">
+                            <i class="ri-customer-service-2-line"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/blogs.html" class="nav__expand-link">
+                            <i class="ri-news-line"></i>
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/cadastro/main.html" class="nav__expand-link">
+                            <i class="ri-logout-box-r-line"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-gamepad-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-search-line"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="blogPage">
+        <aside class="blogPage__aside">
+            <div class="blogPage__aside--search">
+                <form class="fromSearch">
+                    <input type="text" name="searchBlog" id="searchBlog" placeholder="Pesquise aqui..." required>
+
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="search__icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
+
+            <div class="blogPage__aside--categories blogPage__blocks">
+                <h3 class="aside__title">Categorias</h3>
+                <ol class="categories__list">
+                    <li><a href="/src/pages/blogs/categories/comununidade.html">Comunidade</a></li>
+                    <li><a href="/src/pages/blogs/categories/performance.html">Performance</a></li>
+                    <li><a href="/src/pages/blogs/categories/jogos.html">Jogos</a></li>
+                    <li><a href="/src/pages/blogs/categories/tendencias.html">Tendências</a></li>
+                </ol>
+            </div>
+
+            <div class="blogPage__aside--posts blogPage__blocks">
+                <h3 class="aside__title">Posts Relacionados</h3>
+                <div class="posts">
+                    <div class="posts">
+                        <div class="post1">
+                            <div class="post__img">
+                                <img src="/src/assets/images/tendencias-blog.jpg" alt="" class="post__img--bg">
+                            </div>
+                            <h4 class="post__title"><a
+                                    href="/src/pages/blogs/tendências-no-mundo-dos-jogos-o-que-esperar-em-2025.html">Tendências
+                                    no Mundo dos Jogos: O Que Esperar em 2025</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <article class="blogPage__content  blogPage__blocks">
+            <div class="blogPage__content--header">
+                <div class="blogPage__content--image blogPage__content--image2"></div>
+                <div class="blogPage__content--description">
+                    <h1 class="blogPage__content--title">As Melhores Promoções de Jogos: Economize em Grandes
+                        Lançamentos na Solid</h1>
+                    <div class="blogPage__content--data">
+                        <p>Autor: <span class="datasBlog">Solid Blogs</span></p>
+                        <p>Publicado aos: <span class="datasBlog">16 de Março de 2025</span></p>
+                        <p>Categoria: <span class="datasBlog">Tendências</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__content--texts">
+                <div class="paragraphs">
+                    <p class="small__text">No mundo dos games, os lançamentos mais esperados costumam chegar com preços
+                        altos, o que pode dificultar para muitos jogadores adquirirem seus títulos favoritos logo de
+                        início. Mas com um pouco de planejamento e as promoções certas, você pode economizar bastante e
+                        ainda curtir os grandes lançamentos sem estourar o orçamento. <b>Na Solid</b>, estamos
+                        comprometidos em oferecer as melhores oportunidades de economia para que você aproveite ao
+                        máximo o universo dos games.
+                    </p>
+
+                    <h3 class="aside__title--sutitle">Promoções Sazonais</h3>
+                    <p class="small__text">Eventos sazonais são uma excelente oportunidade para garantir grandes
+                        descontos em jogos recém-lançados e também em clássicos. Na <b>Solid</b>, durante datas como a
+                        <b>Black Friday</b> ou as <b>promoções de fim de ano</b>, oferecemos descontos imperdíveis em
+                        uma ampla variedade de títulos. Esses eventos são planejados para proporcionar o melhor
+                        custo-benefício, garantindo que você possa adquirir jogos de alta qualidade por preços
+                        acessíveis.
+                    </p>
+
+
+                    <!-- <p class="small__title">💡Dica Extra:</p> -->
+                    <h3 class="aside__title--sutitle">Principais eventos na Solid:</h3>
+                    <ol class="blogPage__list">
+                        <li>Black Friday</li>
+                        <li>Fim de Ano</li>
+                        <li>Aniversário Solid</li>
+                    </ol>
+
+                    <p class="small__title">💡Dica:</p>
+                    <p class="small__text">Marque essas datas no calendário e prepare-se para aproveitar ao máximo!</p>
+
+                    <h3 class="aside__title--sutitle">Descontos Exclusivos em Lançamentos</h3>
+                    <p class="small__text">Na Solid, <b>os grandes lançamentos também chegam com descontos
+                            especiais</b>. Durante os períodos de pré-venda e lançamento, garantimos ofertas exclusivas
+                        que permitem aos jogadores economizar já no início. Isso é ideal para quem quer estar entre os
+                        primeiros a experimentar os novos títulos, sem precisar pagar o preço cheio.</p>
+
+                    <p class="small__title">Exemplos de vantagens:</p>
+                    <ol class="blogPage__list">
+                        <li>Descontos de até 20% em lançamentos selecionados.</li>
+                        <li>Ofertas limitadas por tempo no primeiro mês de lançamento.</li>
+                    </ol>
+
+                    <p class="small__text">Se você gosta de acompanhar os principais lançamentos do mundo gamer, essa é
+                        a sua chance de <b>economizar sem perder a emoção de estar na vanguarda</b>!</p>
+
+                    <h3 class="aside__title--sutitle">Promoções Rotativas</h3>
+                    <p class="small__text">Além das grandes datas promocionais, a <b>Solid</b> oferece <b>promoções
+                            rotativas semanais</b>, onde você pode encontrar descontos em diversos jogos ao longo do
+                        ano. Essa é a nossa forma de garantir que sempre exista algo interessante à venda,
+                        independentemente da época.</p>
+
+                    <h3 class="small__title">Entre os gêneros mais populares, você poderá encontrar ofertas em:</h3>
+                    <ol class="blogPage__list">
+                        <li><b>Ação e Aventura</b></li>
+                        <li><b>RPGs</b></li>
+                        <li><b>Indies</b></li>
+                        <li><b>Simulação e Estratégia</b></li>
+                    </ol>
+
+                    <p class="small__title">💡Dica</p>
+                    <p class="small__text">Verifique a sessão de ofertas toda semana e veja as promoções rotativas, para
+                        garantir que não perca nenhuma oferta especial.</p>
+
+                    <h3 class="aside__title--sutitle">Programas de Fidelidade e Vouchers de Desconto</h3>
+                    <p class="small__text">Na Solid, recompensamos a fidelidade dos nossos clientes. <b>Cada compra que
+                            você faz na nossa loja gera pontos</b>, que podem ser acumulados e trocados por <b>vouchers
+                            de desconto</b> em suas próximas aquisições. Essa é uma maneira inteligente de economizar
+                        cada vez mais enquanto aproveita seus jogos favoritos.</p>
+
+                    <p class="small__title">Benefícios do programa de fidelidade:</p>
+                    <ol class="blogPage__list">
+                        <li><b>Acumulação de pontos</b> a cada compra.</li>
+                        <li><b>Descontos adicionais</b> para clientes frequentes.</li>
+                        <li><b>Vouchers exclusivos</b> para trocas rápidas e economias significativas.</li>
+                    </ol>
+
+                    <div class="blogPage__conclusion">
+                        <p class="blogPage__conclusion--text">Para não perder nenhuma dessas promoções incríveis,
+                            <b>cadastre-se na nossa newsletter</b> e fique por dentro das últimas novidades e
+                            lançamentos. Assim, você será um dos primeiros a saber sobre novos descontos, pré-vendas e
+                            eventos exclusivos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogPage__footer">
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Partilhar em:</p>
+                    <div class="social__media__footer blogPage__footer--svg">
+                        <!-- X -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <!-- Discord -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path
+                                    d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                            </svg>
+                        </a>
+                        <!-- Twitch -->
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blogPage__content--footer">
+                    <p class="content--footer">Hashtags:</p>
+                    <div class="blogPage__tags">
+                        <span class="datasBlog">#dicasdejogos</span>
+                        <span class="datasBlog">#solidgames</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content__footer">
+            <div class="content__above">
+                <div class="content__footer1">
+                    <div class="footer__intro">
+                        <img src="/src/assets/images/logo-dark.svg" alt="logo da solid" class="footer__logo">
+                        <p class="small__text">Desperte o gamer que existe em você.</p>
+                    </div>
+                    <div class="footer__contact">
+                        <p class="small__text contact__title">CONTACTO</p>
+                        <h3>solid@gmail.com</h3>
+                    </div>
+                </div>
+
+                <div class="content__footer2">
+                    <div class="last__links">
+                        <h3>Links rápidos</h3>
+                        <ol class="footer__links">
+                            <li><a href="/index.html" target="_self">Home</a></li>
+                            <li><a href="/src/pages/store.html" target="_self">Loja</a></li>
+                            <li><a href="/src/pages/blogs.html" target="_self">Blogs</a></li>
+                            <li><a href="/index.html#features" target="_self">Recursos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="Suporte">
+                        <h3>Suporte</h3>
+                        <ol class="footer__links">
+                            <li><a href="#" target="_self">Empresa</a></li>
+                            <li><a href="#" target="_self">Imprensa</a></li>
+                            <li><a href="#" target="_self">Novidades e blogs</a></li>
+                            <li><a href="#" target="_self">Contacte-nos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="newsletter__footer">
+                        <h3>Newsletter</h3>
+                        <p class="small__text">Inscreva-se para receber atualizações sobre lançamentos, promoções e
+                            mais.</p>
+                        <form id="send__newsletter">
+                            <input type="email" name="newsletter" id="newsletter__email" placeholder="Endereço de email"
+                                required>
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__below">
+                <ol class="other__links">
+                    <li><a href="/src/pages/use-terms.html">Termos de uso</a></li>
+                    <li><a href="/src/pages/privacy-policy.html">Política de privacidade</a></li>
+                    <li><a href="./support.html">Suporte</a></li>
+                </ol>
+
+                <div class="copyright">
+                    <p class="small__text">© <span class="year__footer"></span> Solid. Todos os direitos reservados
+                    </p>
+                </div>
+
+                <div class="social__media__footer">
+                    <!-- X -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitch -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+        integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/js/pages.js"></script>
+</body>
+
+</html>

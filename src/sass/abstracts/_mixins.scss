@@ -1,0 +1,11 @@
+@mixin cadastro__button {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-radius: 32px;
+    transition: $transition;
+}

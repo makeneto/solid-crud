@@ -1,0 +1,50 @@
+.user {
+    margin: 32px 0 39px;
+
+    &__profile {
+        display: block;
+        border-radius: 50%;
+        width: 169px;
+        height: 169px;
+        margin: 31px auto 0;
+        background-color: $blueColor;
+    }
+
+    &__name {
+        text-align: center;
+        margin: 28px 0 1px;
+        font-size: 23px;
+        font-weight: 500;
+    }
+
+    &__email {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        color: $textColor;
+
+        & svg {
+            width: 18px !important;
+        }
+    }
+}
+
+.google__button {
+    background-color: $blueColor;
+    width: 100%;
+    padding: 10px;
+    border-radius: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+
+    & svg {
+        width: 18px;
+    }
+}

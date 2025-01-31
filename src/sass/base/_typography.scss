@@ -1,0 +1,31 @@
+.small__text {
+    color: $textColor;
+    font-weight: 400;
+    word-spacing: 1.5px;
+    line-height: 25px;
+    font-size: 17px;
+
+    &--nogray {
+        color: white;
+        font-weight: 400;
+        word-spacing: 1.5px;
+        line-height: 25px;
+        font-size: 17px;
+    }
+}
+
+.blue__word {
+    text-transform: capitalize;
+    color: $blueColor;
+}
+
+.no-capitalize {
+    text-transform: none !important;
+}
+
+.game__features {
+    font-size: 12px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 4px;
+}

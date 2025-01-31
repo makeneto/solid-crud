@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Solid" />
+    <meta name="description" content="Venda de jogos online" />
+    <meta name="keywords" content="Solid, Solid Games, jogos, Venda de jogos online" />
+    <!-- Partilhar website-->
+    <meta property="og:title" content="Solid" />
+    <meta property="og:description" content="Venda de jogos online" />
+    <meta property="og:image" content="Imagem" />
+    <meta property="og:url" content="URL da página" />
+    <meta name="theme-color" content="#181C31" />
+    <link rel="shortcut icon" href="/src/assets/icons/favicon.ico" type="image/x-icon" />
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Solid | Madden NFL 21 PS4™ & PS5™</title>
+</head>
+
+<body>
+    <!-- Notificação para Dispositivos móveis -->
+    <div class="message__solid">
+        <div id="solid__profile">
+            <div class="solid__profile">
+                <img src="/src/assets/icons/favicon.ico" alt="">
+            </div>
+            <img src="/src/assets/icons/iMessage_logo.png" alt="Logo do iMessage" class="imessage__logo">
+        </div>
+
+        <div class="message__content">
+            <h1>Solid Games</h1>
+            <p>Compre para dar uma avaliação.</p>
+        </div>
+
+        <div class="message__time">
+            <p>agora</p>
+        </div>
+    </div>
+
+    <!-- Barra de navegação -->
+    <nav id="main__nav">
+        <div class="nav__logo">
+            <img src="/src/assets/images/logo-dark.svg" alt="" class="logo" />
+        </div>
+
+        <div class="menu-links">
+            <p><a href="/index.html" target="_self" class="page__link">Home</a></p>
+
+            <ul>
+                <li class="stores">
+                    <a href="/src/pages/stores/games.html" target="_self" class="page__link current__page">Loja</a>
+                </li>
+            </ul>
+
+            <p>
+                <a href="/src/pages/blogs.html" target="_self" class="page__link">Blogs</a>
+            </p>
+            <p>
+                <a href="#features" target="_self" class="page__link">Recursos</a>
+            </p>
+            <p>
+                <a href="/src/pages/support.html" target="_self" class="page__link">Suporte</a>
+            </p>
+        </div>
+
+        <div class="nav__others">
+            <a href="/src/pages/cadastro/main.html" target="_self" id="logOut">Terminar sessão</a>
+        </div>
+    </nav>
+
+    <!-- Nav bar Mobile -->
+    <article class="intro__header">
+        <img src="/src/assets/images/logo-dark.svg" alt="" class="logo__tablet" />
+    </article>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <a href="/index.html" class="nav__link">
+                    <i class="ri-home-smile-2-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="../games.html" class="nav__link">
+                    <i class="ri-store-line"></i>
+                </a>
+            </li>
+
+            <!-- Expand list -->
+            <li>
+                <button class="nav__expand" id="nav-expand">
+                    <i class="ri-add-line nav__expand-icon" id="nav-expand-icon"></i>
+                </button>
+
+                <ul class="nav__expand-list" id="nav-expand-list">
+                    <li>
+                        <a href="/src/pages/support.html" class="nav__expand-link">
+                            <i class="ri-customer-service-2-line"></i>
+                            <span>Suporte</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/blogs.html" class="nav__expand-link">
+                            <i class="ri-news-line"></i>
+                            <span>Blogs</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/src/pages/cadastro/main.html" class="nav__expand-link">
+                            <i class="ri-logout-box-r-line"></i>
+                            <span>Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-gamepad-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="nav__link">
+                    <i class="ri-search-line"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Botão de rolagem para cima -->
+    <div class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+        </svg>
+    </div>
+
+    <main id="game__page">
+        <header class="headerGame madden-nfl">
+            <div class="headerGame__inf">
+                <h1>Madden NFL 21 PS4™ & PS5™</h1>
+                <small>EA Swiss Sarl</small>
+
+                <div class="headerGame__inf--supported">
+                    <span class="game__features">PS4</span>
+                    <span class="game__features">PS5</span>
+                    <span class="game__features">Edição Standard
+                    </span>
+                </div>
+
+                <div class="headerGame__inf--ratings">
+                    <p>3.3</p>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#ffffff"
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#ffffff"
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#ffffff"
+                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#ffffff"
+                                d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="#ffffff"
+                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                        </svg>
+                    </div>
+                    <p>10 000 classificações</p>
+                </div>
+
+                <h1 class="headerGame__inf--free">Grátis</h1>
+            </div>
+        </header>
+        <article id="gameSupported">
+            <ul>
+                <li>PS Plus necessário para o jogo online</li>
+                <li>Compras no jogo opcionais</li>
+                <li>Compatível com até 6 jogadores online com o PS Plus</li>
+                <li>Jogos online opcionais</li>
+                <li>1 - 4 jogadores</li>
+            </ul>
+
+            <div id="gameSupported--resources">
+                <div>
+                    <img src="/src/assets/images/jogos/3.png" alt="" id="gameSupported--resources--t">
+                    <img src="/src/assets/images/jogos/ingamepurchases.png" alt="" id="gameSupported--resources--t">
+                </div>
+                <p>+3, In-Game Purchases, Compras no jogo (inclui artigos aleatórios)</p>
+            </div>
+        </article>
+
+        <article class="classificacoes">
+            <h1 class="classificacoes__title">Classificações</h1>
+            <div class="classificacoes__blocks">
+                <div class="classificacoes__blocks--start">
+                    <h1>Madden NFL 21 PS4™ & PS5™</h1>
+                    <p class="small__text">Avalie e nos ajude a melhorar! Sua opinião é essencial para criarmos
+                        experiências ainda melhores.</p>
+                    <button class="cssbuttons-io-button" id="reset">
+                        Classificar
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="ratings">
+                    <div class="rating__intro">
+                        <div class="rating__intro--first">
+                            <h5>Classificações de jogadores globais</h5>
+                        </div>
+
+                        <div class="rating__intro--second">
+                            <div class="rating__intro--second-first">
+                                <h1>3.30</h1>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="#ffffff"
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="#ffffff"
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="#ffffff"
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="#ffffff"
+                                            d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3 0 289.2zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path fill="#ffffff"
+                                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="small__text">10 902 classificações</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <div class="rating__text">
+                            <div class="rating__text--stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                            </div>
+                            <p class="rating__text--percent">48%</p>
+                        </div>
+                        <div class="rating__container">
+                            <div class="rating__container--bar" style="width: 48%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating__text">
+                            <div class="rating__text--stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                            </div>
+                            <p class="rating__text--percent">8%</p>
+                        </div>
+                        <div class="rating__container">
+                            <div class="rating__container--bar" style="width: 8%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating__text">
+                            <div class="rating__text--stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                            </div>
+                            <p class="rating__text--percent">6%</p>
+                        </div>
+                        <div class="rating__container">
+                            <div class="rating__container--bar" style="width: 6%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating__text">
+                            <div class="rating__text--stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                            </div>
+                            <p class="rating__text--percent">5%</p>
+                        </div>
+                        <div class="rating__container">
+                            <div class="rating__container--bar" style="width: 5%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating__text">
+                            <div class="rating__text--stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path
+                                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                </svg>
+                            </div>
+                            <p class="rating__text--percent">34%</p>
+                        </div>
+                        <div class="rating__container">
+                            <div class="rating__container--bar" style="width: 34%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="infoGame">
+            <h1 class="infoGame__title">Informações</h1>
+
+            <div class="infoGame__block">
+                <h2 class="infoGame__block--include">Inclui:</h2>
+
+                <div class="infoGame__block--paragraphs">
+                    <p>Compra o Madden NFL 21 para PS4™ e recebe o jogo para PS5™ gratuitamente.*</p>
+                    <p>Ascende à Fama no Madden NFL 21.</p>
+                    <p>Uma nova geração deixa a sua marca na NFL. Será que estás à altura do momento? Decide o jogo e
+                        apodera-te do teu próprio legado. <br>
+                        O Madden NFL 21 proporciona novas funcionalidades e modos, incluindo:</p>
+                    <p>• A Cara da Franquia: Ascende à Fama: Ascende à fama e torna-te imortal no Madden NFL 21 à medida
+                        que transcendes a história da NFL e moldas o teu próprio percurso rumo à glória.</p>
+                    <p>• Ganha Controlo: Domina melhorias inovadoras de corrida e jogadas estudadas dinâmicas para
+                        ficares por cima no marcador no Madden NFL 21.</p>
+                    <p>• X-Factor 2.0: Novas habilidades X-Factor, acabadas de sair do laboratório e desenhadas para
+                        elevar as estrelas de uma nova geração no Madden NFL 21.</p>
+                    <p>Intitula-te ao MADDEN NFL 21 para PS4™ antes do lançamento do MADDEN NFL 22 e faz a atualização
+                        para o MADDEN NFL 21 para PS5™ gratuitamente*. Mantém todo o conteúdo que adquirires no MADDEN
+                        NFL 21 Ultimate Team, incluindo o conteúdo do Binder e os Madden Points. Transfere o teu Avatar,
+                        equipamento e Madden Rank através do The Yard.</p>
+                    <p>Este jogo inclui compras opcionais dentro de jogo jogo de moeda virtual que podem ser utilizadas
+                        para adquirir uma variedade aleatória de artigos de jogo virtuais.</p>
+                    <p>*APLICAM-SE CONDIÇÕES. CONSULTE ea.com/pt-pt/dual-entitlement PARA OBTER MAIS DETALHES.</p>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="categoriaGame">
+            <div class="categoriaGame__info">
+                <p>Plataforma:</p>
+                <p>
+                    PS4, PS5</p>
+                <p>Lançamento:</p>
+                <p>3/12/2020
+                </p>
+                <p>Editora:</p>
+                <p>EA Swiss Sarl
+                </p>
+                <p>Géneros:</p>
+                <p>
+                    Desporto</p>
+                <p>Voz:</p>
+                <p>
+                    Inglês</p>
+                <p>Idiomas do ecrã:</p>
+                <p>
+                    Inglês</p>
+            </div>
+
+            <div class="categoriaGame__text paragraphs">
+                <p>Para jogar este título na PS5, o software do sistema poderá necessitar de ser atualizado para a
+                    versão mais recente. Embora seja possível jogar este título na PS5, algumas funcionalidades
+                    disponíveis na PS4 poderão estar ausentes. Consulte PlayStation.com/bc para obter mais
+                    informações.</p>
+                <p>A transferência deste produto está sujeita aos Termos de Serviço da PlayStation Network e aos
+                    nossos Termos de Utilização do Software, além de quaisquer condições adicionais específicas
+                    aplicáveis a este produto. Se não desejas aceitar estes termos, não transfiras este produto.
+                    Consulta os Termos de Serviço para obteres mais informações importantes.</p>
+                <p>Pode efetuar a transferência deste conteúdo e reproduzir o mesmo na consola PS5 principal
+                    associada à sua conta (através da definição “Partilha da consola e jogos offline”) e em
+                    quaisquer outras consolas PS5 ao iniciar uma sessão com essa conta.</p>
+                <p>Antes de utilizar este produto, consulte os avisos de saúde para obter informações importantes
+                    sobre saúde.</p>
+                <p>Library programs ©Sony Interactive Entertainment Inc. é licenciado exclusivamente para a Sony
+                    Interactive Entertainment Europe. Aplicam-se Termos de Utilização do Software. Consulte
+                    eu.playstation.com/legal para saber todos os direitos de utilização.</p>
+            </div>
+        </article>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="content__footer">
+            <div class="content__above">
+                <div class="content__footer1">
+                    <div class="footer__intro">
+                        <img src="/src/assets/images/logo-dark.svg" alt="logo da solid" class="footer__logo" />
+                        <p class="small__text">Desperte o gamer que existe em você.</p>
+                    </div>
+                    <div class="footer__contact">
+                        <p class="small__text contact__title">CONTACTO</p>
+                        <h3>solid@gmail.com</h3>
+                    </div>
+                </div>
+
+                <div class="content__footer2">
+                    <div class="fast__links">
+                        <h3>Links rápidos</h3>
+                        <ol class="footer__links">
+                            <li><a href="#" target="_self">Home</a></li>
+                            <li><a href="/src/pages/store.html" target="_self">Loja</a></li>
+                            <li>
+                                <a href="/src/pages/blogs.html" target="_self">Blogs</a>
+                            </li>
+                            <li><a href="#features" target="_self">Recursos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="Suporte">
+                        <h3>Suporte</h3>
+                        <ol class="footer__links">
+                            <li><a href="#" target="_self">Empresa</a></li>
+                            <li><a href="#" target="_self">Imprensa</a></li>
+                            <li><a href="#" target="_self">Novidades e blogs</a></li>
+                            <li><a href="#" target="_self">Contacte-nos</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="newsletter__footer">
+                        <h3>Newsletter</h3>
+                        <p class="small__text">
+                            Inscreva-se para receber atualizações sobre lançamentos,
+                            promoções e mais.
+                        </p>
+                        <form id="send__newsletter">
+                            <input type="email" name="newsletter" id="newsletter__email" placeholder="Endereço de email"
+                                required />
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__below">
+                <ol class="other__links">
+                    <li><a href="/src/pages/use-terms.html">Termos de uso</a></li>
+                    <li>
+                        <a href="/src/pages/privacy-policy.html">Política de privacidade</a>
+                    </li>
+                    <li><a href="/src/pages/support.html">Suporte</a></li>
+                </ol>
+
+                <div class="copyright">
+                    <p class="small__text">
+                        © <span class="year__footer"></span> Solid. Todos os direitos
+                        reservados
+                    </p>
+                </div>
+
+                <div class="social__media__footer">
+                    <!-- X -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <!-- Discord -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                            <path
+                                d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitch -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M391.2 103.5H352.5v109.7h38.6zM285 103H246.4V212.8H285zM120.8 0 24.3 91.4V420.6H140.1V512l96.5-91.4h77.3L487.7 256V0zM449.1 237.8l-77.2 73.1H294.6l-67.6 64v-64H140.1V36.6H449.1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"
+        integrity="sha512-4F1cxYdMiAW98oomSLaygEwmCnIP38pb4Kx70yQYqRwLVCs3DbRumfBq82T08g/4LJ/smbFGFpmeFlQgoDccgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/src/js/gamePage.js"></script>
+    <script src="/src/js/games.js"></script>
+    <script src="/src/js/pages.js"></script>
+</body>
+
+</html>
