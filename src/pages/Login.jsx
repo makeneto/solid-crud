@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { GoogleOAuthProvider } from '@react-oauth/google'
@@ -6,7 +5,6 @@ import { jwtDecode } from 'jwt-decode'
 import { useLogin } from '../features/authentication/useLogin'
 
 export default function Login({ isLoggedIn, setIsLoggedIn }) {
-    const { register } = useForm();
     const [fullName, setFullName] = useState()
     const [emailGoogle, setEmailGoogle] = useState()
 
@@ -139,7 +137,6 @@ export default function Login({ isLoggedIn, setIsLoggedIn }) {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         disabled={isLoading}
-                                        {...register("email", { required: "Este campo é obrigatório" })}
                                     />
                                 </label>
 
@@ -153,7 +150,6 @@ export default function Login({ isLoggedIn, setIsLoggedIn }) {
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                         disabled={isLoading}
-                                        {...register("senha", { required: "Este campo é obrigatório" })}
                                     />
                                 </label>
 
