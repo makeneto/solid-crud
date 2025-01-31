@@ -96,9 +96,13 @@ export default function NavBars({ isLoggedIn, setIsLoggedIn }) {
                                 </a>
                             </li>
                             <li>
-                                <Link to='/login' className="nav__expand-link">
-                                    <i className={isLoggedIn ? "ri-logout-box-r-line" : "ri-login-box-line"}></i>
-                                    <span>{isLoggedIn ? 'Sair' : 'Entrar'}</span>
+                                <Link
+                                    to='/login'
+                                    className="nav__expand-link"
+                                    onClick={handleLogout}
+                                >
+                                    <i className="ri-logout-box-r-line"></i>
+                                    <span>Sair</span>
                                 </Link>
                             </li>
                         </ul>
