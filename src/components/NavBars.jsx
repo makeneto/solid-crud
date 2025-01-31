@@ -6,7 +6,7 @@ export default function NavBars({ isLoggedIn, setIsLoggedIn }) {
 
     const handleLogout = () => {
         localStorage.removeItem('user');
-        localStorage.removeItem('sb-mylcsnmrcbdrphqobkdv-auth-token');
+        localStorage.removeItem('sb-zbkmswrabygspfhtwloq-auth-token');
         setIsLoggedIn(false);
     };
 
