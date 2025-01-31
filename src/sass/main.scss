@@ -1408,7 +1408,8 @@ $horizontal-space: 32.5%;
             gap: 22px;
 
             &--button {
-                margin-top: 17px;
+                padding: 12px 0;
+                margin: 17px 0 15px;
 
                 & button {
                     font-size: 17px;
@@ -1419,7 +1420,8 @@ $horizontal-space: 32.5%;
     }
 
     .google__button {
-        padding: 5.5px;
+        padding: 7.7px;
+        font-size: 18px;
     }
 
     select {
@@ -1672,7 +1674,7 @@ $horizontal-space: 32.5%;
     }
 
     .cadastro__first__block--link {
-        margin: 42px 0 10px;
+        margin: 24px 0 10px;
     }
 
     // Página não encontrada
