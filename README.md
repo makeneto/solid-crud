@@ -1,5 +1,5 @@
 # Solid Games (React, SASS, e mais...)
-<b>Solid Games: Pesquise, Adicione ao carrinho e compre seus jogos</b> <br>
+### Solid Games: Pesquise, Adicione ao carrinho e compre seus jogos
 Solid 🎮 é uma plataforma dedicada à venda de jogos 🎮, consoles 🎮 e acessórios 🕹️. Nosso objetivo é proporcionar aos jogadores uma experiência de compra fácil, segura e personalizada, com produtos de alta qualidade e excelente atendimento 💯. A Solid oferece uma ampla gama de jogos para diversas plataformas 🎮, além de consoles e acessórios, sempre com o compromisso de manter os preços competitivos e entregar a melhor experiência de compra para os nossos clientes 🛍️.
 
 ## Cadastre-se e Faça Parte da Solid! 🚀
