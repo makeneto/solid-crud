@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion"
+import { useState } from "react"
 
 export default function CartItem({ cartObj, setCart }) {
   const {
@@ -13,13 +13,13 @@ export default function CartItem({ cartObj, setCart }) {
     oldPrice,
     rating,
     numRatings,
-  } = cartObj;
+  } = cartObj
 
-  const [isRemoving, setIsRemoving] = useState(false);
+  const [isRemoving, setIsRemoving] = useState(false)
 
   const removeFromCart = (e, id) => {
-    e.preventDefault();
-    setIsRemoving(true);
+    e.preventDefault()
+    setIsRemoving(true)
     setTimeout(() => {
       setCart((prevCart) => prevCart.filter((jogo) => jogo.id !== id))
     }, 300)
@@ -82,5 +82,5 @@ export default function CartItem({ cartObj, setCart }) {
         </motion.a>
       )}
     </AnimatePresence>
-  );
+  )
 }
