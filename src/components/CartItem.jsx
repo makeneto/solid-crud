@@ -21,9 +21,9 @@ export default function CartItem({ cartObj, setCart }) {
     e.preventDefault();
     setIsRemoving(true);
     setTimeout(() => {
-      setCart((prevCart) => prevCart.filter((jogo) => jogo.id !== id));
-    }, 300); // Tempo da animação
-  };
+      setCart((prevCart) => prevCart.filter((jogo) => jogo.id !== id))
+    }, 300)
+  }
 
   return (
     <AnimatePresence>
