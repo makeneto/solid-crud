@@ -1,43 +1,43 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "react-hot-toast";
+import { useState, useEffect, lazy, Suspense } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { Toaster } from "react-hot-toast"
 
-import LoadingFullPage from './components/LoadingFullPage';
-import PageNotFound from './pages/PageNotFound';
-import Login from './pages/Login';
-import ProtectedRoute from './components/ProtectedRoute';
-import SignUp from './pages/SignUp';
+import LoadingFullPage from './components/LoadingFullPage'
+import PageNotFound from './pages/PageNotFound'
+import Login from './pages/Login'
+import ProtectedRoute from './components/ProtectedRoute'
+import SignUp from './pages/SignUp'
 
-const SearchPage = lazy(() => import('./pages/SearchPage'));
-const Cart = lazy(() => import('./pages/Cart'));
+const SearchPage = lazy(() => import('./pages/SearchPage'))
+const Cart = lazy(() => import('./pages/Cart'))
 
 export default function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState();
+  const [isLoggedIn, setIsLoggedIn] = useState()
   const [cart, setCart] = useState(() => {
-    const storedCart = localStorage.getItem("cart");
-    return storedCart ? JSON.parse(storedCart) : [];
-  });
+    const storedCart = localStorage.getItem("cart")
+    return storedCart ? JSON.parse(storedCart) : []
+  })
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  }, [cart]);
+    localStorage.setItem("cart", JSON.stringify(cart))
+  }, [cart])
 
   // Somatório doa preços novos
   const currentTotal = cart.reduce((sum, item) => {
-    const numericValue = parseFloat(item.newPrice.replace(/[^\d,.]/g, '').replace('.', '').replace(',', '.'));
-    return sum + numericValue;
-  }, 0);
+    const numericValue = parseFloat(item.newPrice.replace(/[^\d,.]/g, '').replace('.', '').replace(',', '.'))
+    return sum + numericValue
+  }, 0)
 
-  const formattedCurrentTotal = currentTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  const formattedCurrentTotal = currentTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 
   // Somatório doa preços antigos
   const oldTotal = cart.reduce((sum, item) => {
-    const numericValue = parseFloat(item.oldPrice.replace(/[^\d,.]/g, '').replace('.', '').replace(',', '.'));
-    return sum + numericValue;
-  }, 0);
+    const numericValue = parseFloat(item.oldPrice.replace(/[^\d,.]/g, '').replace('.', '').replace(',', '.'))
+    return sum + numericValue
+  }, 0)
 
-  const formattedOldTotal = oldTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  const formattedOldTotal = oldTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')
 
   const queryClient = new QueryClient({
     defaultOptions: {
@@ -45,7 +45,7 @@ export default function App() {
         staleTime: 0,
       },
     },
-  });
+  })
 
   return (
     <div>
@@ -131,5 +131,5 @@ export default function App() {
         />
       </QueryClientProvider>
     </div>
-  );
+  )
 }

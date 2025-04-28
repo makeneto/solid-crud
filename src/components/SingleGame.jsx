@@ -1,4 +1,5 @@
 import { memo, useState, } from "react"
+import { Link } from "react-router-dom"
 
 // Componente que cria e configura cada jogo mostrado na tela de pesquisa
 const SingleGame = memo(({ gameObj, setCart, cart }) => {
@@ -28,8 +29,8 @@ const SingleGame = memo(({ gameObj, setCart, cart }) => {
     }
 
     return (
-        <a
-            href={link}
+        <Link
+            to={link ? link : '/'}
             className='game'
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -76,7 +77,7 @@ const SingleGame = memo(({ gameObj, setCart, cart }) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 })
 

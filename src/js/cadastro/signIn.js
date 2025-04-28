@@ -4,7 +4,7 @@ const signIn = () => {
     signInButton.addEventListener('submit', (e) => {
         e.preventDefault()
 
-        window.location.href = "/index.html"
+        window.location.href = "/main.html"
     })
 }
 
