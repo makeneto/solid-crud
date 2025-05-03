@@ -120,9 +120,47 @@ if (window.innerWidth >= 1024 && window.innerWidth <= 1439) {
     })
 }
 
+if (window.innerWidth >= 1440 && window.innerWidth <= 1525) {
+    document.addEventListener('scroll', () => {
+        let scrollPosition = window.scrollY
+        let scrollTop = document.querySelector('.scroll-top')
+        let text1 = document.getElementById('description1')
+        let text2 = document.getElementById('description2')
+
+        if (scrollPosition > 545) {
+            scrollTop.style.display = 'flex'
+        }
+        else {
+            scrollTop.style.display = 'none'
+        }
+
+        scrollTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }))
+
+        // Testemunhal 1
+        if (scrollPosition > 2751 && scrollPosition < 5641) {
+            text1.classList.add('show')
+            image1.classList.add('blur')
+        }
+        else {
+            text1.classList.remove('show')
+            image1.classList.remove('blur')
+        }
+
+        // Testemunhal 2
+        if (scrollPosition > 5641) {
+            text2.classList.add('show')
+            image2.classList.add('blur')
+        }
+        else {
+            text2.classList.remove('show')
+            image2.classList.remove('blur')
+        }
+    })
+}
+
 
 // Desktops
-if (window.innerWidth >= 1439) {
+if (window.innerWidth >= 1526) {
     document.addEventListener('scroll', () => {
         let scrollPosition = window.scrollY
         let scrollTop = document.querySelector('.scroll-top')

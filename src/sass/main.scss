@@ -4769,7 +4769,209 @@ $horizontal-space: 32.5%;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1520px) {
+    .index__header {
+        padding: 40px 6%;
+    }
+
+    .patter3 {
+        bottom: 25.5%;
+        right: 4.3%;
+    }
+
+    .patter2 {
+        bottom: 20.5%;
+        right: 2.3%;
+    }
+
+    .brands {
+        padding: 2% 6%;
+    }
+
+    .intro {
+        padding: 0 24%;
+    }
+
+    .features {
+        padding: 8% 6% !important;
+    }
+
+    .whats__new {
+        padding: 0 6%;
+    }
+
+    #features__blocks {
+        padding: 0 0%;
+    }
+
+    .new__first__section,
+    .new__second__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 11%;
+    }
+
+    .new__second__section {
+        gap: 9%;
+    }
+
+    .new__img {
+        height: auto;
+        width: 62%;
+    }
+
+    .benefits__nav {
+        margin: 0 6%;
+    }
+
+    .benefits__slides {
+        padding: 4% 6% 0;
+    }
+
+    .statistics {
+        margin: 10% 10%;
+    }
+
+    .ballon {
+        top: -133px;
+        left: 40px;
+    }
+
+    .statistics__content {
+        padding: 6% 15% 0;
+    }
+
+    .integrations {
+        margin: 0 6% 10%;
+    }
+
+    .integrations__figures {
+        margin-top: 5%;
+    }
+
+
+    .join__us {
+        margin: 0 6% 10%;
+    }
+
+    .faqs {
+        margin: 0 6% 6%;
+        align-items: start;
+    }
+
+    .plans {
+        margin: 0 7% 10%;
+    }
+
+    .header__game--img {
+        height: 128%;
+    }
+
+    .bestSeller {
+        grid-template-rows: repeat(2, 340px);
+    }
+
+    .top10__carrossel a {
+        min-width: 260px;
+        height: 259px;
+    }
+
+    .video__container--text {
+        left: 19%;
+    }
+
+    .video__container {
+        height: 90dvh;
+    }
+
+
+    element.style {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .play__video--ps5-pro {
+        width: 68%;
+        height: 68%;
+    }
+
+    .infoGame__block {
+        width: 53%;
+        margin: 4% auto;
+    }
+
+    .categoriaGame {
+        width: 52%;
+        margin: -1.8% auto 3%;
+    }
+
+
+    element.style {
+        left: 44%;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .message__solid {
+        top: 15%;
+    }
+
+    #gameSupported {
+        margin: 30px 4% 30px 53%;
+    }
+
+    .headerGame__inf--buy {
+        gap: 5%;
+    }
+
+    .editions__card--bg {
+        height: 253px;
+    }
+
+    .news__blogs {
+        margin: 7% 9% 10%;
+    }
+
+    footer {
+        padding: 0 6%;
+    }
+
+    #supportform {
+        margin: 0 6% 0%;
+        gap: 7%;
+    }
+
+    .submit__area {
+        gap: 3%;
+    }
+
+    #support {
+        width: 108%;
+    }
+
+    .support__submit {
+        width: 260px;
+    }
+
+    .testemunhal__profile {
+        width: 163px;
+    }
+
+    .testemunhal__text {
+        font-size: 26px;
+    }
+
+    .testemunhal__name {
+        font-size: 18px;
+    }
+
+    .testemunhal__job {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1524px) {
     $horizontal-space: 36.5%;
 
     .cadastro {
