@@ -2326,7 +2326,7 @@ $horizontal-space: 32.5%;
     // Loja de Jogos
     .header__game {
         width: 100%;
-        height: 501px;
+        height: 39dvh !important;
 
         &--img {
             width: 100%;
@@ -3171,7 +3171,7 @@ $horizontal-space: 32.5%;
 }
 
 /* Laptops */
-@media (min-width: 1025px) and (max-width: 1439px) {
+@media (min-width: 1025px) and (max-width: 1919px) {
     $horizontal-space: 2.5%;
 
     /* Scroll-top */
@@ -3201,6 +3201,14 @@ $horizontal-space: 32.5%;
     .signIn__button {
         padding: 8px 22px;
         font-size: 15px;
+    }
+
+    .google__button {
+        padding: 5px;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
     }
 
     /* Cabeçalho */
@@ -3959,7 +3967,7 @@ $horizontal-space: 32.5%;
     }
 
     .cadastro {
-        padding: 0 33.5%;
+        padding: 0 35.5%;
         margin: 4% auto 0;
 
         &__back {
@@ -4124,6 +4132,7 @@ $horizontal-space: 32.5%;
             }
 
             &--button {
+                padding: 9px 0;
                 margin-top: 11px;
 
                 & button {
@@ -4235,7 +4244,7 @@ $horizontal-space: 32.5%;
             display: flex;
             justify-content: space-between;
             gap: 3px;
-            padding: 0 33.5%;
+            padding: 0 35.5%;
 
             &--enterWidth {
                 margin-top: 11px;
@@ -4971,7 +4980,21 @@ $horizontal-space: 32.5%;
     }
 }
 
-@media (min-width: 1524px) {
+@media (max-width: 1919px) {
+    .header__game--img {
+        height: 140%;
+    }
+
+    .header__game {
+        height: 75dvh;
+    }
+
+    .support__submit {
+        width: 196px;
+    }
+}
+
+@media (min-width: 1920px) {
     $horizontal-space: 36.5%;
 
     .cadastro {

@@ -6503,7 +6503,7 @@ select {
   }
   .header__game {
     width: 100%;
-    height: 501px;
+    height: 39dvh !important;
   }
   .header__game--img {
     width: 100%;
@@ -7139,7 +7139,7 @@ select {
   }
 }
 /* Laptops */
-@media (min-width: 1025px) and (max-width: 1439px) {
+@media (min-width: 1025px) and (max-width: 1919px) {
   /* Scroll-top */
   .scroll-top {
     width: 35px;
@@ -7162,6 +7162,12 @@ select {
   .signIn__button {
     padding: 8px 22px;
     font-size: 15px;
+  }
+  .google__button {
+    padding: 5px;
+  }
+  .google__button:hover {
+    filter: brightness(0.9);
   }
   /* Cabeçalho */
   .index__header {
@@ -7758,7 +7764,7 @@ select {
     background-size: cover;
   }
   .cadastro {
-    padding: 0 33.5%;
+    padding: 0 35.5%;
     margin: 4% auto 0;
   }
   .cadastro__back {
@@ -7885,6 +7891,7 @@ select {
     color: #006bff;
   }
   .cadastro__grid--button {
+    padding: 9px 0;
     margin-top: 11px;
   }
   .cadastro__grid--button button {
@@ -7986,7 +7993,7 @@ select {
     display: flex;
     justify-content: space-between;
     gap: 3px;
-    padding: 0 33.5%;
+    padding: 0 35.5%;
   }
   .cadastro__second__block--enterWidth {
     margin-top: 11px;
@@ -8403,7 +8410,6 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    gap: 0;
     gap: 11%;
   }
   .new__second__section {
@@ -8526,7 +8532,18 @@ select {
     font-size: 14px;
   }
 }
-@media (min-width: 1524px) {
+@media (max-width: 1919px) {
+  .header__game--img {
+    height: 140%;
+  }
+  .header__game {
+    height: 75dvh;
+  }
+  .support__submit {
+    width: 196px;
+  }
+}
+@media (min-width: 1920px) {
   .cadastro {
     padding: 0 36.5%;
     margin: 4% auto 0;

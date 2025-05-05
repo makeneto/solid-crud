@@ -110,13 +110,6 @@
     <!-- Suporte -->
     <!-- Notificação para Dispositivos móveis -->
     <div class="message__solid">
-        <div id="solid__profile">
-            <div class="solid__profile">
-                <img src="/src/assets/icons/favicon.ico" alt="">
-            </div>
-            <img src="/src/assets/icons/iMessage_logo.png" alt="Logo do iMessage" class="imessage__logo">
-        </div>
-
         <div class="message__content">
             <h1>Solid Suporte</h1>
             <p>Solicitação enviada com suces...</p>
@@ -149,24 +142,23 @@
             </div>
 
             <div id="supportform">
-                <!-- Formulário de Suporte -->
-                <form method="get" id="support" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                <form action="https://formspree.io/f/xblooalk" method="POST" id="support">
                     <h1>Enviar uma mensagem</h1>
                     <div class="first__data">
                         <div class="support__flex">
-                            <input type="text" name="fullName" class="dataSupport" id="supportName"
+                            <input type="text" name="Nome Completo" class="dataSupport" id="supportName"
                                 placeholder="Nome completo" pattern="^(?=.*\s).+$" required>
-                            <input type="email" name="email" class="dataSupport" id="supportEmail"
+                            <input type="email" name="Email" class="dataSupport" id="supportEmail"
                                 placeholder="Endereço de email" required>
                         </div>
                         <div class="support__flex">
-                            <input type="text" name="assunto" class="dataSupport" id="supportAssunto"
+                            <input type="text" name="Assunto" class="dataSupport" id="supportAssunto"
                                 placeholder="Assunto" required>
-                            <input type="tel" name="telefone" class="dataSupport" id="supporttel"
+                            <input type="tel" name="Telefone" class="dataSupport" id="supporttel"
                                 placeholder="Número de telefone" pattern="[0-9]{9,}" required>
                         </div>
                     </div>
-                    <textarea name="mensagem" class="dataSupport" id="mensagem" placeholder="Mensagem"
+                    <textarea name="Mensagem" class="dataSupport" id="mensagem" placeholder="Mensagem"
                         required></textarea>
                     <div class="submit__area">
                         <div class="check__cookies">
@@ -182,8 +174,7 @@
                                 </label>
                             </div>
                             <p class="small__text">Ao clicar aqui, você concordará em usar nossos termos
-                                de
-                                formulário.</p>
+                                de formulário.</p>
                         </div>
                         <button type="submit" class="support__submit">
                             Enviar mensagem
@@ -195,6 +186,7 @@
                         </button>
                     </div>
                 </form>
+
                 <aside class="our__address" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
                     <h1>Encontre-nos</h1>
                     <div class="address__content">
